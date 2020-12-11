@@ -1,6 +1,5 @@
-# Lab1
 
-Ec2 Lab With Manual Apache
+EC2 Lab With Manual Apache
 ------------------------------
 
 # Goto AWS Management Console>AWS Services>Find services>Type EC2>Click on EC2>EC2 Dashboard>Instances>Launch Instances
