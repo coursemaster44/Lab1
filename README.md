@@ -58,7 +58,7 @@ Select an existing key pair or create a new key pair
 $ sudo su
 ```
 
-**Step 11. Run the Following Commands.
+**Step 11. Run the Following Commands.**
 ```
 $ yum update -y
 $ yum install -y httpd
