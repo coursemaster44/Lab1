@@ -289,3 +289,14 @@ zip -r dir.zip . -x "_MACOSX"
  
  **Step 10.Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment>select**
  
+# lab5#Git-Installation-lab
+
+### Run the following commands to install Git.
+
+``` sh
+$ git --version
+$ brew update && brew upgarde
+$ brew install git
+$ brew link --force git
+$ git --version
+```
