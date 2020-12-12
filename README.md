@@ -1,4 +1,6 @@
 
+# Lab1
+
 EC2 Lab With Manual Apache
 ------------------------------
 
@@ -144,4 +146,115 @@ Select an existing key pair or create a new key pair
 
 ### End Of Lab
 
+# Lab3
 
+### lab3-ElasticBeanStalk
+
+**Step 1. Goto AWS Management Console>AWS Services>Find services>Type Elastic Beanstalk>Click on Elastic Beanstalk>Elastic Beanstalk>Create Application**
+
+
+**Step 2. Create a Web App**
+   - Application Name-MyfirstEbsapp
+		 
+		 - Platform 
+		    - Platform 
+		       - Node.js
+			- Platform branch
+			   - Node.js 12 running on 64bit Amazon Llinux2
+			- Platform version
+			   - 5.2.3(Recommended)
+			   
+	  
+   - Application Code
+			   - Select Sample application
+			 
+	
+ Click on Create Application.
+	
+
+
+**Step 3. Creating environment started**
+
+Elastic BeanStalk launches an environment named MyfirstEbsapp-env with these AWS resources:
+
+ - S3 Bucket
+
+ - Target Group
+
+ - Security Group for ec2 instance
+ 
+ - Security Group for ALB
+ 
+ - Auto Scaling launch configuration
+ 
+ - Auto Scaling Group
+ 
+ - Auto Scaling Policies
+ 
+ - CloudWatch Alarms
+ 
+ - Load Balancer
+ 
+ - Load balancer listener
+
+ - EC2 instance
+
+
+**Step 4. Check the environment**
+
+- The environment overview pane shows its URL,current health status, the application version,platform version  
+
+- Click on MyfirstEbsapp>Application versions
+
+- Click on MyfirstEbsapp-env
+
+Click on Go to environment
+
+
+
+**Step 5. Goto each component and verify the resources created by Elastic BeanStalk**
+
+
+   - S3 Bucket
+        -Goto AWS Console>All Services>S3>Buckets
+        
+   
+   - Auto Scaling launch configuration
+         - AWS Console>Services>Ec2>Auto Scaling>launch configuration>User Data>View User Data
+         
+		
+   - Auto Scaling Group
+         - AWS Console>Services>Ec2>Auto Scaling>Auto Scaling Groups
+         
+		 
+   - EC2 instance
+         - AWS Console>All services>EC2 >Instances>    
+         
+		
+   - Target Group
+         - Goto AWS Console>All Services>EC2>Load Balancer>Target Group>Targets
+		 
+   
+   - Load Balancer
+         - AWS Console>Services>EC2>Load Balancing>Load balancers>awseb-AWSEB-LoadBalancer>Listeners>Edit
+         
+	
+  -  Security Groups
+         - Goto AWS Console>All Services>EC2>Security Groups
+         
+		 
+  -  CloudWatch Alarms
+         - AWS Console>Services>CloudWatch>Alarms>Alarm	 
+		 
+		 
+
+**Step 6.ElasticBeanStalk>Applications>MyfirstEbsapp>Application versions**
+
+  Click on Sample Application>nodejs.zip
+  
+  Download the nodejs.zip
+  
+  
+  
+  # End of Lab
+  
