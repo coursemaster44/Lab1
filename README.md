@@ -214,7 +214,7 @@ Click on Go to environment
 
 **Step 5. Goto each component and verify the resources created by Elastic BeanStalk**
 
-
+``` sh
    - S3 Bucket
         -Goto AWS Console>All Services>S3>Buckets
         
@@ -246,15 +246,46 @@ Click on Go to environment
   -  CloudWatch Alarms
          - AWS Console>Services>CloudWatch>Alarms>Alarm	 
 		 
-		 
+```
+
 
 **Step 6.ElasticBeanStalk>Applications>MyfirstEbsapp>Application versions**
 
-  Click on Sample Application>nodejs.zip
+  - Click on Sample Application>nodejs.zip
   
-  Download the nodejs.zip
+  - Download the nodejs.zip
   
   
   
   # End of Lab
   
+
+lab4#ElasticBeanstalk-2
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Step 1. Open node.js in VS studio and do changes for background color**
+
+**Step 2. Save this file as nodejs2.zip**
+
+**Step 3.Elastic BeanStalk>Applications>MyfirstEbsapp>Application versions>upload>Sample application-1>choose file>nodejs(2).zip>upload**
+
+**Step 4.Select Sample application-1>Actions>Deploy>Deploy**
+
+**Step 5.Open VS Studio>index.html>Terminal**
+
+```sh
+zip -r dir.zip . -x "_MACOSX"
+```
+
+**Step 6.MyfirstEbsapp>Application versions>upload>Sample application-2>choose file>dir.zip>upload**
+
+**Step 7.Select Sample application-2>Actions>Deploy>Deploy**
+
+**Step 8.ElasticBeanStalk>Environments>Myfirstebsapp-env>Events**
+
+**Step 9.ElasticBeanStalk>Environments>Myfirstebsapp-env**
+
+ - Click on Application URL 
+ 
+ **Step 10.Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment>select**
+ 
