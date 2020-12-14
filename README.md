@@ -392,7 +392,93 @@ Click on Close
 
 - Select listener and Click on Edit
 		   
-**Step 17. Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers>Target groups>MyFirstTargetgroup>Targets**	   
+**Step 17. Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers>Target groups>MyFirstTargetgroup>Targets**	  
+
+
+Lab7# ASG-Lab
+---------------------------------
+**Step 1 .Goto AWS Console>EC2 Dashboard>Instances>Lunch Templates>Create launch template**
+**Step 2 .In Create Lunch template give as following-**
+- Launch template name-MyFirstTemplate
+
+- Amazon Machine image(AMI)-Amazon Linux 2
+
+- Instance type-t2.micro
+
+- key pair-select your key
+
+- Virtual Private Cloud
+
+- Security groups
+
+- Storage
+
+- Advanced details
+ - User data
+``` sh
+#bin/bash
+$yum update -y
+$yum install -y httpd
+$systemctl start httpd.service
+$echo "Hello World from $(hostname -f)" > /var/html/index.html
+```
+
+Click on Create Lunch template>View Launch templates
+
+**Step 3. Select "MyFirstTemplate" Goto Actions>Create Auto Scaling group**
+
+**Step 4.Give name "MyFirstASG" in Auto Scaling group name**
+ Click on Next
+ 
+ **Step 5.Network**
+ - VPC-default
+ - Subnets-Select all the 3 subnets
+ 
+ Click on Next
+ 
+ **Step 5.Load balancing**
+ -No Load balancer for as of now
+ 
+ Now Click on Next
+ 
+ **Step 6.Configure group size and scaling policies**
+ - Group size
+   - Desired capacity-1
+   - Minimum capacity-1
+   - Maximum capacity-1
+   
+ - scaling policies-None
+ 
+ Click on Next
+ 
+**Step 7.Add Notifications**
+ Click on Next
+ 
+**Step 8.Add Tags**
+ Click on Next
+ 
+**Step 9.Review**
+ Click on Create Auto Scaling group
+ 
+**Step 10 Select MyFirstASG>Instances>Lifecycle**
+- Status-InService
+ 
+**Step 11.Copy the Instance Ip Address and paste in Internet browser**
+
+**Step 12.EC2>Auto Scaling groups>MyFirstASG>Edit**
+
+**Step 13. Change Group size**
+- Desired capacity-3
+- Minimum capacity-3
+- Maximum capacity-3
+
+**Step 14.EC2>Auto Scaling groups>MyFirstASG>Instances>Lifecycle**
+
+**Step 15. Goto EC2 Dashboard>Instances**
+
+Copy the Ip address of all the three Instances and paste it in Internet Browser one by one.
+ 
+ # End of Lab
 		   		  
 
 
