@@ -146,9 +146,14 @@ Select an existing key pair or create a new key pair
 
 ### End Of Lab
 
+
+
+
+
 # Lab3
 
 ### lab3-ElasticBeanStalk
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Step 1. Goto AWS Management Console>AWS Services>Find services>Type Elastic Beanstalk>Click on Elastic Beanstalk>Elastic Beanstalk>Create Application**
 
@@ -214,7 +219,7 @@ Click on Go to environment
 
 **Step 5. Goto each component and verify the resources created by Elastic BeanStalk**
 
-``` sh
+``` 
    - S3 Bucket
         -Goto AWS Console>All Services>S3>Buckets
         
@@ -289,8 +294,11 @@ zip -r dir.zip . -x "_MACOSX"
  
  **Step 10.Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment>select**
  
-# lab5#Git-Installation-lab
 
+# End of Lab
+
+# lab5#Git-Installation-lab
+----------------------------------------------------------------------------------------------------------------------------------------------
 ### Run the following commands to install Git.
 
 ``` sh
@@ -300,3 +308,116 @@ $ brew install git
 $ brew link --force git
 $ git --version
 ```
+# End of Lab
+
+
+
+
+# lab6#ALB Lab-1
+-----------------------------
+**Step 1. Go to AWS Console>All Services>EC2>Load Balancing>Target Groups>Create Target Group**
+
+**Step 2. Specify group details as following**
+-   Select Instances in target type  
+-   Target group name as MyFirstTargetgroup
+-   Protocol-HTTP,Port-80
+-    VPC-Default
+-    Protocol version
+-    Health Checks
+	  - Health check protocol- HTTP
+	   - Health check path- /
+		  
+**Now Click on Next**
+
+**Step 3. Register targets**
+          
+ - Select the available instances
+- Ports for the selected instances-80
+- Click on "Include as pending below"
+		   
+**Now Click on Create target group**
+		   
+**Step 4. "MyFirstTargetgroup" Target Group has been created**
+
+**Step 5. Goto MyFirstTargetgroup>Targets**
+              
+ - Status is showing "unused"
+			  
+**Step 6. Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers>Create load balancer**
+
+**Step 7. Click on Create in Application Load Balancer**
+
+**Step 8. Configure Load Balancer as following**
+		 
+- Basic Configuration
+	- Name- MyFirstALB
+	- Scheme- internet-facing
+	- Ip address type- ipv4
+-  Listeners-Protocol-HTTP,Port-80
+-  Availability Zones
+		      - VPC-Default
+			  - Availability Zones-Select all Zones 
+-  Configure Security Settings
+
+**Step 9.Configure Security Groups** 
+          
+-  Create a new security group
+	- Type-Custom TCP
+    - Protocol-TCP
+    - Port Range-80	
+    - Source-Custom(0.0.0.0./0)	
+
+Click on Next:Configure Routing
+
+**Step 10.Configure Routing**
+          
+- Target group- Select Existing target group Name-MyFirstTargetgroup
+		  
+Click on Register Targets
+
+**Step 11.Click on Next:Review**
+
+**Step 12.Click on Create**
+Click on Close
+
+**Step 13.Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers**
+
+**Step 14. Copy the DNS name from Description**
+
+**Step 15. Paste the DNS name in Internet Browser**
+           
+- Hit refresh 3 times to see the Traffic is going on all the 3 instances
+
+**Step 16.Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers>MyFirstALB>Listeners**
+
+- Select listener and Click on Edit
+		   
+**Step 17. Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers>Target groups>MyFirstTargetgroup>Targets**	   
+		   		  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
