@@ -592,6 +592,76 @@ Our Free Tier AWS Acoount is Ready.
 
 # End of Lab
 
+# Lab10
+# IAM-User-setup
+
+**Step 1.Login to AWS Console>Click on Your AWS Account>My Billing Dashboard>Billing preferences**
+
+**Step 2.Under Billing Preferences-**
+- Select Receive Free Usage Alerts
+- Mention Email address
+- Select Receive Billing Alerts
+
+Click on Save preferences.
+
+**Step 3.Goto AWS Console>All Services>CloudWatch>Billing**
+Please Switch Region to # US East(N.Virginia) as CloudWatch displays all billing data
+and alarms in # US East(N.Virginia)
+
+**Step 4.Billing>Create Alarm>Conditions**
+- Threshold type - Static
+- Whenever EstimatedCharges is.. - Greater
+- than - 5 USD
+
+Click on Next
+
+**Step 5.Configure actions>Notification**
+- Alarm state trigger - In alarm
+- Select an SNS topic>Create new topic
+    - topic name - Default_CloudWatch_Alarms_Topic
+	- Provide Email address to receive the notification.
+	Click on Create Topic
+	
+	Now Click on Next
+	
+**Step 6.Add name and description**
+- Alarm name - MyBillingAlarm
+- Description
+
+Click on Next
+
+**Step 7.Preview all the details and Click on Create Alarm**
+Successfully created MyBillingAlarm
+
+**Step 8.Goto your Email inbox and look for the email from AWS**
+- Open Email and click on Confirm Subscription
+- See the message Subscription confirmed
+
+**Step 9. AWS Console>All services>IAM>IAM Dashboard>Users>Add user**
+- Set User details-Provide User name
+- Select AWS access type 
+  - Access Type
+     - Programmatic access
+     - AWS Management Console access
+	 
+ - Console password
+  
+ Click on Next:Permissions
+ 
+ **Step 10.Click on Attach existing policies directly**
+ - Select AdministratorAccess
+ 
+ Click on Next:Tags
+ 
+ **Step 11.Click on Next:Review**
+ 
+ **Step 12.Review your choices and Click on Create user**
+ 
+ **Step 13.Click on Download.csv**
+
+# End of Lab
+
+
 
 
 		   		  
