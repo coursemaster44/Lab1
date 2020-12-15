@@ -506,14 +506,14 @@ Now Click on Update
 
 **Step 6. Select 1st Instance>Security>Inbound rules**
 
-**Step EC2 Dashboard>Load Balancing>Target Groups>Targets**
+**Step 7. EC2 Dashboard>Load Balancing>Target Groups>Targets**
 - Wait for Instance to become unhealthy
 
-**Step 7.EC2>Auto Scaling groups>MyFirstASG>Lifecycle**
+**Step 8.EC2>Auto Scaling groups>MyFirstASG>Lifecycle**
 - See that Instance is Terminating
 - Now see new Instance is launching.
 
-**Step 8. Copy the Newly launched Instance's IP address and paste in the internet browser**
+**Step 9. Copy the Newly launched Instance's IP address and paste in the internet browser**
 - See Hello World message.
 
 # End of Lab
