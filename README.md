@@ -518,6 +518,82 @@ Now Click on Update
 
 # End of Lab
 
+
+# Lab 9--AWS Account SetUp
+
+**Step 1.Open up your browser and type- setting up your AWS free Tier account**
+**Step 2.Click on the first result**
+**Step 3.Then Click on Create a Free Account**
+**Step 4.Provide the following details-**
+- Email address
+- Password
+- Confirm password
+- AWS account name
+
+Click on Continue
+
+**Step 5.Now again give some more details-**
+- Account type
+- Full name
+- Company name
+- Phone number
+- Country/Region
+- Address
+- City
+- State
+- Postal code
+
+Click on Create account and continue
+
+**Step 6.Payment Information details-**
+- Credit/Debit card number
+- Expiration date
+- Cardholder's name
+- Billing address
+
+**Step 7.Authenticate Transaction with OTP**
+
+**Step 8.Confirm your identity with following-**
+- Text message/Voice call
+- Country/Region code
+- Cell Phone Number
+- Security check
+
+Click on Send SMS
+
+**Step 9.Enter verification code**
+Click on Verify Code 
+
+**Step 10. Your identity has been verified successfully**
+Click on Continue
+
+**Step 11. Select a Support Plan**
+- Select Free
+
+**Step 12.Fill the details before it will ask you to sign in to AWS Console**
+- My Role is:Academic/Researcher
+- I am interested in:Devops
+
+Click on Submit
+See Thank You message.
+
+**Step 13.Click on Sign in to the Console**
+
+**Step 14.Sign in page-**
+- Provide Root user email address.
+
+Click on Next
+
+**Step 15.Type the password**
+Click on Signin
+
+Our Free Tier AWS Acoount is Ready.
+
+
+# End of Lab
+
+
+
 		   		  
 
 
