@@ -480,6 +480,44 @@ Click on Create Lunch template>View Launch templates
 Copy the Ip address of all the three Instances and paste it in Internet Browser one by one.
  
  # End of Lab
+ 
+ 
+ # Lab8-ASG&ALB
+-------------------------------------------------------------------
+**Step 1. Goto AWS Console>All Services>EC2>Load Balancing>Load Balancers>MyFirstALB>Listeners**
+
+**Step 2. EC2>Auto Scaling groups>MyFirstASG>Edit**
+- Go to Load Balancers and select the Application or Network Load Balancer target groups
+- Select "MyFirstTargetgroup"
+- Health check type
+  - Select ELB 
+  - Put the value to 120 sec of Health check grace period.
+
+Now Click on Update
+
+**Step 3.EC2>Auto Scaling groups>MyFirstASG>Instance management**
+- See all instances are InService
+
+**Step 4.Select 1st Instance>Actions>Security>Change security groups**
+- Remove "launch-wizard-1" security group
+- Add "port80closed" security group
+
+**Step 5. EC2 Dashboard>Network & Security>Security Groups>port80closed>Inbound rules**
+
+**Step 6. Select 1st Instance>Security>Inbound rules**
+
+**Step EC2 Dashboard>Load Balancing>Target Groups>Targets**
+- Wait for Instance to become unhealthy
+
+**Step 7.EC2>Auto Scaling groups>MyFirstASG>Lifecycle**
+- See that Instance is Terminating
+- Now see new Instance is launching.
+
+**Step 8. Copy the Newly launched Instance's IP address and paste in the internet browser**
+- See Hello World message.
+
+# End of Lab
+
 		   		  
 
 
