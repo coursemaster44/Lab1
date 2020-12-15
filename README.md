@@ -104,12 +104,12 @@ Click on Next-Configure Instance details
     - Select As Text
 
 ```sh
-#bin/bash
+#!bin/bash
 yum update -y
 yum install -y httpd
 systemctl start httpd.service
 systemctl enable httpd.service
-echo "Hello World from $(hostname -f)" > /var/html/index.html
+echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 ```
 
   Click on Next:Add Storage
@@ -416,11 +416,12 @@ Lab7# ASG-Lab
 - Advanced details
  - User data
 ``` sh
-#bin/bash
-$yum update -y
-$yum install -y httpd
-$systemctl start httpd.service
-$echo "Hello World from $(hostname -f)" > /var/html/index.html
+#!bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 ```
 
 Click on Create Lunch template>View Launch templates
