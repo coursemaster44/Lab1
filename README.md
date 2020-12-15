@@ -605,7 +605,7 @@ Our Free Tier AWS Acoount is Ready.
 Click on Save preferences.
 
 **Step 3.Goto AWS Console>All Services>CloudWatch>Billing**
-Please Switch Region to # US East(N.Virginia) as CloudWatch displays all billing data
+- Please Switch Region to # US East(N.Virginia) as CloudWatch displays all billing data
 and alarms in # US East(N.Virginia)
 
 **Step 4.Billing>Create Alarm>Conditions**
@@ -631,7 +631,7 @@ Click on Next
 Click on Next
 
 **Step 7.Preview all the details and Click on Create Alarm**
-Successfully created MyBillingAlarm
+- Successfully created MyBillingAlarm
 
 **Step 8.Goto your Email inbox and look for the email from AWS**
 - Open Email and click on Confirm Subscription
