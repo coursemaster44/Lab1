@@ -883,6 +883,58 @@ Now able to see the s3 details.
 # End of lab
 
 
+# Lab 14
+# Vpc-lab-1
+
+**Step 1.AWS Management Console>All Services>VPC(Mumbai Region)**
+**Step 2.Following Amazon VPC resources are in Asia Pacific(Mumbai)**
+- VPCs - 1
+- Subnets - 3
+- Route Tables -1
+- Internet Gateways - 1
+- Nat Gateways - 0
+- Network ACLs - 1
+- Security Groups - 6
+- DHCP options sets - 1
+- VPC Peering Connections - 0
+- Customer Gateways - 0
+- Virtual Private Gateways - 0
+
+Click on Region and change it to US East(N.Virginia) us-east-1
+
+**Step 3. US East(N.Virginia) also has the same Amazon VPC resources.**
+Click on Region and change it to US West(Oregon) us-west-2
+
+**Step 4. US West(Oregon) us-west-2 also has the same Amazon VPC resources.**
+
+**Step 5. Click on Region and change it to Asia Pacific(Mumbai)**
+- Now Click on Subnets 
+- 3 Subnets are present
+- Select one subnet and click on Route Table Tab
+   - It has Two Entries
+      - First entry allows access within the VPC
+      - Second entry allows outside the VPC
+
+**Step 6. Goto AWS Console>Services>VPC>Route Tables>Routes**
+- It has Two Entries
+  - First entry allows access within the VPC
+  - Second entry allows outside the VPC
+
+**Step 7.Goto AWS Console>Services>VPC>Security>Network ACLs>Subnet associations**
+- Acting on all the three subnets
+- Inbound Rules - ALLOW ALL
+- Outbound Rules - ALLOW ALL
+
+**Step 8.Goto AWS Console>Services>VPC>Security>Security Groups**
+- Select Default security group>Inbound Rules
+  - Accepts traffic from an Ec2 instance with the same Security Group
+
+**Step 9.Goto AWS Console>Services>VPC>Internet Gateways**  
+- 1 Internet Gateway attached to Default VPC
+
+# End of lab
+
+
 		   		  
 
 
