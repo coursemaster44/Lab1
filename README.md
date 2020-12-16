@@ -661,7 +661,226 @@ Click on Next
 
 # End of Lab
 
+# lab 11
+ # IAM user login
+ 
+**Step 1.Signin into AWS Console with Account ID and IAM user name.**
 
+**Step 2.Type the following to change the password at first login-**
+- Old password
+- New password
+- Confirm new password
+
+Click on Confirm password change
+
+**Step 3.Open Amazon Document with following link.**
+- https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
+
+**Step 4.Open your Terminal and type following command with help of above link.**
+```sh
+$ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+$ sudo installer -pkg AWSCLIV2.pkg -target /
+$ aws --version
+```
+**Step 5.Follow the link and type command-**
+- https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
+```sh
+$ aws configure
+```
+- Provide AWS Access key ID
+- Provide Secret Access key
+- Default region name
+- Default output format
+
+Test the following command to list all the Buckets.
+```
+$aws s3 ls
+```
+Now type commands-
+```sh
+$ cd ~/.aws
+$ ls
+$ cat credentials
+$ cat configure
+```
+
+# End of lab
+
+# Lab12
+# IAM-lab-part-1
+
+**Step 1.Goto AWS Management Console>All Services>EC2>Auto Scaling>Auto Scaling groups>MyFirstASG>Edit**
+- Group size
+  - Desired capacity-1
+  - Minimum capacity-1
+  - Maximum capacity-1
+  
+ Click on Update
+ 
+**Step 2.Goto AWS Management Console>All Services>IAM**
+- Click On Users
+- Click on user name Amit>Permissions>AdministratorAccess>Permissions>{}JSON
+```sh
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+**Step 3.Goto IAM Dashboard>Access management>Policies**
+- Click on drop down arrow of one policy and see JSON policy.
+```sh
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeAddresses",
+                "ec2:DescribeByoipCidrs",
+                "ec2:DescribeVpcEndpoints",
+                "ec2:DescribeVpcs",
+                "iam:GetRole",
+                "iam:ListRoles",
+                "kms:DescribeKey",
+                "kms:GetKeyPolicy",
+                "kms:ListGrants",
+                "kms:ListKeyPolicies",
+                "kms:ListKeys",
+                "lambda:GetLayerVersionPolicy",
+                "lambda:GetPolicy",
+                "lambda:ListAliases",
+                "lambda:ListFunctions",
+                "lambda:ListLayers",
+                "lambda:ListLayerVersions",
+                "lambda:ListVersionsByFunction",
+                "organizations:DescribeAccount",
+                "organizations:DescribeOrganization",
+                "organizations:DescribeOrganizationalUnit",
+                "organizations:ListAccounts",
+                "organizations:ListAccountsForParent",
+                "organizations:ListAWSServiceAccessForOrganization",
+                "organizations:ListChildren",
+                "organizations:ListDelegatedAdministrators",
+                "organizations:ListOrganizationalUnitsForParent",
+                "organizations:ListParents",
+                "organizations:ListRoots",
+                "s3:GetAccessPoint",
+                "s3:GetAccessPointPolicy",
+                "s3:GetAccessPointPolicyStatus",
+                "s3:GetAccountPublicAccessBlock",
+                "s3:GetBucketAcl",
+                "s3:GetBucketLocation",
+                "s3:GetBucketPolicyStatus",
+                "s3:GetBucketPolicy",
+                "s3:GetBucketPublicAccessBlock",
+                "s3:ListAccessPoints",
+                "s3:ListAllMyBuckets",
+                "sns:GetTopicAttributes",
+                "sns:ListTopics",
+                "secretsmanager:DescribeSecret",
+                "secretsmanager:GetResourcePolicy",
+                "secretsmanager:ListSecrets",
+                "sqs:GetQueueAttributes",
+                "sqs:ListQueues"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+**Step 4.Goto Ec2 Dashboard and see that Ec2 server is up and running**
+
+**Step 5.Select Instance>Actions>Connect>connect**
+
+**Step 6.Run the following commands**
+```sh
+$ aws s3 ls
+```
+
+# End of lab
+
+# lab13
+# IAM-Lab-part-2
+**Step 1.IAM Dashboard>Roles>Create Role**
+- Select Type of trusted entity
+  - AWS Service
+- Choose a use case
+  - EC2
+
+Click on Next:Permissions
+
+**Step 2.Type s3 in search bar**
+- Select AmazonS3FullAccess
+
+Click on Next:Tags
+**Step 3.Click on Next:Review**
+
+**Step 4.Provide the Following information-**
+- Role name
+- Role description
+
+Click on Create role
+
+**Step 5.Role has been created.Attach this IAM role to EC2 instance**
+- Select the instance and goto Actions>Security>Modify IAM role>choose IAM role>EC2S3FullAccess
+
+Click on Save.
+
+**Step 6.Now EC2 Dashboard>Select Instance>Actions>Connect>connect**
+- type the following command
+```sh
+$ aws s3 ls
+```
+Now able to see the s3 details.
+
+**Step 7.Goto AWS Console>All Services>S3>Buckets>teacheramitk>Permissions>Bucket Policy**
+```sh
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws-cn:s3:::teacheramitk/*"
+            ]
+        }
+    ]
+}
+```
+
+**Step 8.IAM Dashboard>Roles>Ec2S3FullAccess>Permissions**
+- See JSON Policy for AmazonS3FullAccess
+
+**Step 9.IAM Dashboard>Roles>Ec2S3FullAccess>Trust relationships>Edit Trust Relationship**
+```sh
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "ec2.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
+```
+
+# End of lab
 
 
 		   		  
