@@ -887,6 +887,7 @@ Now able to see the s3 details.
 # Vpc-lab-1
 
 **Step 1.AWS Management Console>All Services>VPC(Mumbai Region)**
+
 **Step 2.Following Amazon VPC resources are in Asia Pacific(Mumbai)**
 - VPCs - 1
 - Subnets - 3
@@ -902,10 +903,10 @@ Now able to see the s3 details.
 
 Click on Region and change it to US East(N.Virginia) us-east-1
 
-**Step 3. US East(N.Virginia) also has the same Amazon VPC resources.**
-Click on Region and change it to US West(Oregon) us-west-2
+**Step 3. US East(N.Virginia) also has the same Amazon VPC resources**
+- Click on Region and change it to US West(Oregon) us-west-2
 
-**Step 4. US West(Oregon) us-west-2 also has the same Amazon VPC resources.**
+**Step 4. US West(Oregon) us-west-2 also has the same Amazon VPC resources**
 
 **Step 5. Click on Region and change it to Asia Pacific(Mumbai)**
 - Now Click on Subnets 
