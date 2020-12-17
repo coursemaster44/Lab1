@@ -935,6 +935,93 @@ Click on Region and change it to US East(N.Virginia) us-east-1
 
 # End of lab
 
+# lab14
+# s3-lab
+
+**Step 1.AWS Management Console>All Services>S3>Create Bucket**
+- Provide globally unique Bucket name - "teacheramitk"
+- Region
+- Block all public access - leave as for now
+- Bucket versioning - leave as for now
+
+Click on Create Bucket.
+
+**Step 2.Click on created Bucket "teacheramitk"**
+- Click on Upload
+
+**Step 3.Upload>Add Files**
+- Select file "testfile1.txt" to upload
+
+Upload scucceeded
+
+**Step 4. Click on this Object**
+- In Details Click on Object URL
+  - Access denied error (Because object is not public)
+
+**Step 5. Amazon S3>teacheramitk>Permissions>Edit Block public access**
+- Uncheck Block all public access
+- Click on Save changes
+- type confirm and click on confirm
+
+**Step 6.Amazon S3>teacheramitk>object"testfile1.txt">Object actions>Make public>Click Make public**
+- successfully edited public access
+
+**Step 7. Now Click on Object URL**
+- File is accessible now
+
+**Step 8. Amazon S3>teacheramitk>Permissions>Bucket policy>Edit**
+```sh
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::teacheramitk/*"
+            ]
+        }
+    ]
+}
+```
+
+Click on Save changes
+
+**Step 9.Goto Amazon S3>teacheramitk>Upload**
+- Add files "testfile2.txt"
+- Click on Object URl of "testfile2.txt"
+- file is accessible
+
+**Step 10.Amazon S3>teacheramitk>Properties>Bucket Versioning>Edit>Enable**
+- Click on Save changes
+
+**Step 11.Goto Amazon S3>teacheramitk>Objects>Upload>Add files**
+- Select "testfile3.txt"
+- Click on Upload
+- Click on "testfile3.txt"
+- Click on Object URL
+- File is accessible
+
+**Step 12 Try to Upload different version of same file**
+- Goto Amazon S3>teacheramitk>Objects>Upload>Add files
+- Secret version 2 of "testfile3.txt"
+- Click on Upload
+- Click on "testfile3.txt"
+- Click on Object URL
+- File is accessible
+- Amazon S3>teacheramitk>"testfile3.txt">Versions
+- Note the upload timings of different versions
+
+**Step 13 Open AWS CLI Terminal**
+```sh
+$ aws s3 ls
+```
+- Above command shows the name of bucket in output.
+
 
 		   		  
 
