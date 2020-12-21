@@ -1194,6 +1194,7 @@ $ aws s3 ls
 ```
 - Above command shows the name of bucket in output.
 
+# lab-18
 # VSCode-install-Lab
 
 **Step 1.Open Internet Browser and type "install visual studio code" in google search**
@@ -1215,7 +1216,82 @@ $ aws s3 ls
 
 
 		   		  
+# lab-19
+# # CloudWatch-Alarm-Lab-1
 
+**Step 1.Launch Ec2 Instance**
+- Goto AWS Management Console>Services>EC2>EC2 Dashboard>Instances>Launch Instances
+- Select Amazon Linux2 AMI
+- Select Instance type - t2.micro
+
+Click on Next:Configure Instance Details
+
+**Step 2.Keep details default**
+
+Click on Next:Add Storage
+
+**Step 3.Click on Next:Add Tags**
+
+**Step 4.Click on Next:Configure Security Group**
+- Select an existing security group
+
+  Click on Review and Launch>Launch
+
+**Step 5.Choose an existing key pair>Select key pair**
+
+- Click on Launch Instances
+
+**Step 6.Goto EC2Dashboard>Instance>Monitoring**
+-Wait for sometime for Metrics to be created
+
+**Step 7.Goto AWS Management Console>Services>CloudWatch>Metrics>All metrics>EC2>Per-Instance Metrics** 
+- Copy the instance-id from EC2 Dashboard
+- Paste it in the Per-Instance Metrics Search bar
+- Select the CPUUtilization Metric in drop-down menu
+
+**Step 8.Goto AWS Management Console>Services>CloudWatch>Alarms>Create alarm**
+- Select Metric for alarm
+  - All metrics>per-Instance Metrics
+  - Copy the instance-id from EC2 Dashboard
+  - Select the CPUUtilization Metric in drop-down menu
+Click on Select Metric
+
+**Step 9.Specify metric and conditions**
+- Change Period - 1 minute
+- Conditions - Static
+  - Whenever CPUUtilization is ... - Lower
+  - Than... threshold value - 40 percent
+ 
+Click on Next
+
+ **Step 10.Now Configure actions>Notification - Click on Remove (As We are using EC2 action Below)** 
+- EC2 action>Add Ec2 action
+  - Alarm state trigger
+    - In Alarm
+	  - Take the following action
+	    - Select Stop the instance
+		
+Click on Next
+
+**Step 11.Add name and description**
+- Alarm name - MyFirstAlarm
+
+Click on Next
+
+**Step 12.Preview and create**
+- see step2:configure actions
+
+Click on Create alarm
+
+**Step 13.CloudWatch>Alarms>MyFirstAlarm**
+- Showing insufficient data (Wait for some time)
+- See in EC2Dashboard instance is running fine
+- Check it after some time Instance is stopped now.
+
+CPUUtilization was below 40 percent and CloudWatch stopped it.
+
+
+# End of lab
 
 
 
