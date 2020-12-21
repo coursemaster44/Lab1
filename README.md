@@ -1059,7 +1059,7 @@ Click on Review and Launch>Launch
 
 **Step 5.Choose an existing key pair>Select key pair**
 
-Click on Launch Instances**
+Click on Launch Instances
 
 
 **Step 6.Goto EC2 Dashboard>Instances>Launch Instances**
@@ -1087,7 +1087,7 @@ Click on Review and Launch>Launch
 
 **Step 10.Choose an existing key pair>Select key pair**
 
-Click on Launch Instances**
+Click on Launch Instances
 
 **Step 11.Goto EC2Dashboard>Instances**
 - Select the Public Instance
