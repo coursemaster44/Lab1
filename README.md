@@ -935,7 +935,93 @@ Click on Region and change it to US East(N.Virginia) us-east-1
 
 # End of lab
 
-# lab14
+# lab 15
+
+# Vpc-Lab-2
+
+**Step 1. Goto AWS Console>Services>VPC>Create VPC**
+- Provide the following details
+  - Name - CustVPC
+  - IPv4 CIDR block - 10.0.0.0/16
+  
+ Click on Create VPC
+
+**Step 2.VPC has been created successfully**
+
+**Step 3. Goto VPC>Subnets>Create Subnet**
+Give following details
+- VPC ID - default vpc
+- Subnet name - PubSub
+- Asia Pacific(Mumbai)/ap-south-1a
+- IPv4 CIDR block - 10.0.1.0/24
+
+Click on Create Subnet
+
+**Step 4.Goto VPC>Subnets>Create Subnet**
+Give following details
+- VPC ID - CustVPC
+- Subnet name - PvtSub
+- Asia Pacific(Mumbai)/ap-south-1b
+- IPv4 CIDR block - 10.0.0.0/24
+
+Click on Create Subnet
+
+**Step 5.Goto AWS Console>Services>VPC>Route Tables**
+- Click on CustVPC route table and rename it to "DefRTCustVPC"
+
+**Step 9.Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
+Create route table**
+Provide the details-
+- Name - CustRTCustVPC
+- VPC - CustVPC
+
+Click on Create
+
+**Step 9.Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
+- Give Name - CustVPCIG
+
+Click on Create Internet Gateway
+
+**Step 10. Goto AWS Console>Services>VPC>Internet Gateways>CustVPCIG>Actions>Attach to VPC**
+- Select CustVPC
+- Attach Internet Gateway
+
+**Step 11.Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Routes**
+- It has one entry that allows any access within the VPC
+
+
+**Step 12.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Routes**
+- It has one entry that allows any access within the VPC
+
+**Step 13.Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Subnet associations**
+- No Subnet association
+
+**Step 14.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Subnet associations**
+- No Subnet association
+
+**Step 15.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Subnet associations>Edit subnet associations**
+- Select PubSub
+
+ Click on Save.
+
+- Now CustRTCustVPC is associated with PubSub 
+
+**Step 16.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Routes>Edit routes>Add route**
+Give the following details.
+- Destination - 0.0.0.0/0
+- Target - Internet Gateway
+
+Click on Save routes and click on Close
+
+**Step 17.Goto VPC>Subnets>PubSub>Actions>Modify auto-assign IP settings**
+- Select "Enable auto-assign public IPv4 address"
+
+Click on Save
+
+Now Auto-assign public IPv4 address has YES entry.
+
+
+# lab16
 # s3-lab
 
 **Step 1.AWS Management Console>All Services>S3>Create Bucket**
