@@ -104,7 +104,7 @@ Click on Next-Configure Instance details
     - Select As Text
 
 ```sh
-#!bin/bash
+#!/bin/bash
 yum update -y
 yum install -y httpd
 systemctl start httpd.service
