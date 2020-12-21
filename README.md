@@ -1351,7 +1351,70 @@ Click on Create rule.
  
  # End of lab
 
+# Lab 21
+# DynamoDb-Lab
 
+**Step 1.Goto AWS Management Console>Services>DynamoDB>Create Table**
+- Give Table name - Movies
+- Primary key 
+  - Partition key- Year
+    - Number
+  - Add sort key -title
+    - String
+- Table settings
+  - uncheck default settings 	
+  - Read/Write capacity mode - Provisioned 
+  - Provisioned capacity 
+    - Read capacity - 1
+	- Write capacity - 1
+  - Auto Scaling
+    - uncheck Read capacity and write capacity
+-Encyrption at Rest - default
+
+Click on Create 
+
+**Step 2.TABLE Created successfully**
+- Goto Movies>Items>create item
+  - Year - 1997
+  - title - As good as it gets
+ 
+ Click on Save
+ 
+ **Step 2. Goto Movies>Items>create item**
+ - year - 2020
+ - title - test1
+ - Click on +
+    - Append>string
+      - genre String:romcom
+ 
+ Click on save
+ 
+ **Step 2. Goto Movies>Items>create item**
+ - year - 1997
+ - title - Titanic
+ - Click on +
+   - Append>Number
+     -rating Number: - 9
+
+ Click on Save
+ 
+ **Step 3. Goto Movies>Items>select 1997>Actions>Edit**
+ - Click on +
+ - Append>Number
+ - Give value rating to Number - 9
+ 
+ Click on Save
+ 
+ **Step 4. Goto Movies>Items>1997>Actions>Delete>Delete**
+ 
+ **Step 5. Goto Movies>Items>Select from drop-down>Query**
+ - Partition key 1997
+ - Sort key - As good as it gets
+ 
+ **Step 6. Goto Movies>Delete Table>delete**
+ 
+ # End of lab
+ 
 
 
 
