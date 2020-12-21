@@ -1194,6 +1194,25 @@ $ aws s3 ls
 ```
 - Above command shows the name of bucket in output.
 
+# VSCode-install-Lab
+
+**Step 1.Open Internet Browser and type "install visual studio code" in google search**
+
+**Step 2. Click on the very first link**
+
+**Step 3. Select your Operating system link**
+- As soon as you click on link it will start downloading vscode zip file
+
+**Step 4.Goto Downloads>VSCode-drawin-stable.zip>RightClick>open with>Archive Utility**
+
+**Step 5.File is Unzipped**
+
+**Step 6. Now Move content to Application folder**
+
+**Step 7.Goto Applications and click on VSCode icon to access it**
+
+# End of lab
+
 
 		   		  
 
