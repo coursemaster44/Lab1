@@ -1293,6 +1293,63 @@ CPUUtilization was below 40 percent and CloudWatch stopped it.
 
 # End of lab
 
+# Lab 20
+# CloudWatch-lab-2
+
+**Step 1.Goto AWS Management Console>Services>Simple Notification  Service>Create topic**
+- Give name - MyFirstTopic
+
+Click on Next Step
+
+**Step 2.Create Topic>Details>Standard**
+- Keep everthing default
+
+Click on Create Topic
+
+**Step 3.Goto AWS Management Console>Services>Amazon SNS>Subcriptions>Create subscription**
+- Details
+  - Topic ARN - selct MyFirstTopic
+  - Protocol - Email
+  - Endpoint - teacheramitk@gmail.com
+  
+Click on create subscription
+
+**Step 4. Amazon SNS>Topics>MyFirstTopic>Subcriptions**
+- Pending confirmation
+- Check the Email given above
+- See the Email from AWS Notification-Subcription Confirmation
+  - Click on Confirm subscription
+  - See the confirmation 
+
+**Step 5. Amazon SNS>Subcriptions**
+- See that status is Confirmed of Topic MyFirstTopic
+
+**Step 6. CloudWatch>Events>Rules>Create Rule**
+In Event Source -
+- Select - Event Pattern
+  - Service Name - Ec2
+  - Event Type - EC2 Instance-change Notification
+  - Specific state(s)
+    - Select - running
+	
+  - Specific Instance id(s) 
+    - Copy Instance id from EC2Dashboard 
+
+Than Targets>Add Targets>SNS topic>MyFirstTopic
+
+Click on Configure details.
+
+**Step 7.Configure rule details**
+- Name - MyFirstEvent
+
+Click on Create rule.
+
+**Step 8.Goto AWS Management Console>Services>EC2>EC2 Dashboard>Instances**
+- Select the Instance>Instance state>Start the Instance
+  - CloudWatch will send the notification to SNS Topic
+  - Check for Notification in Email inbox
+ 
+ # End of lab
 
 
 
