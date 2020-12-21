@@ -1020,8 +1020,94 @@ Click on Save
 
 Now Auto-assign public IPv4 address has YES entry.
 
+# Lab 16
+VPC-Lab-3
 
-# lab16
+**Step 1.Goto AWS Console>Services>EC2>EC2 Dashboard>Instances>Launch Instances**
+- Select Amazon Linux2 AMI
+- Select Instance type - t2.micro
+
+Click on Next:Configure Instance Details
+
+**Step 2.Provide the following details-**
+- Select CustVPC 
+- Select Subnet - PubSub
+- Auto-assign Public IP - Use subnet setting (Enable)
+- Advanced details>User Data
+```sh
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd.service
+systemctl enable httpd.service
+echo "Hello World from $(hostname -f)" > /var/www/html/index.html
+```
+
+Click on Next:Add Storage
+
+**Step 3.Click on Next:Add Tags**
+
+**Step 4.Click on Next:Configure Security Group**
+- Create a new security group
+- Click on Add rule
+  - Type - HTTP
+  - Protocol -TCP
+  - Port - 80
+  - Source - Custom-0.0.0.0/0
+  
+Click on Review and Launch>Launch
+
+**Step 5.Choose an existing key pair>Select key pair**
+
+Click on Launch Instances**
+
+
+**Step 6.Goto EC2 Dashboard>Instances>Launch Instances**
+- Select Amazon Linux2 AMI
+- Select Instance type - t2.micro
+
+Click on Next:Configure Instance Details
+
+**Step 7.Provide the following details-**
+- Select - CustVPC 
+- Select Subnet - PvtSub
+- Auto-assign Public IP - Use subnet setting (Disable)
+- Advanced details>User Data
+  - No need for Web server
+
+Click on Next:Add Storage
+
+**Step 8.Click on Next:Add Tags**
+
+**Step 9.Click on Next:Configure Security Group**
+- Select an existing security group
+
+  
+Click on Review and Launch>Launch
+
+**Step 10.Choose an existing key pair>Select key pair**
+
+Click on Launch Instances**
+
+**Step 11.Goto EC2Dashboard>Instances**
+- Select the Public Instance
+  - Copy the Public IPv4 address
+  - Paste it in the Browser
+  - Public Server is accessible
+
+**Step 12.EC2Dashboard>Public instance>Actions>Connect>connect**
+- We are into EC2 server
+  - Ping google.com and see the success.
+  
+**Step 13.EC2Dashboard>Private instance** 
+- No Public Ipv4 address
+
+# End of Lab
+  
+
+
+
+# lab17
 # s3-lab
 
 **Step 1.AWS Management Console>All Services>S3>Create Bucket**
