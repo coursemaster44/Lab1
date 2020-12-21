@@ -1415,6 +1415,37 @@ Click on Create
  
  # End of lab
  
+ 
+ # lab 22
+ # nodejs-lab
+ 
+ **Step 1.Open google in Internet Browser and type "install node js on mac"**
+ 
+ **Step 2.Click on Very first link "Download | Node.js"**
+ 
+ **Step 3.Downloads>LTS version>macos installer**
+ - Downloads has been started
+ 
+ **Step 4.Open downloaded file Install Node.js**
+ 
+ **Step 5.Click on Continue>continue>Agree>Install**
+
+ **Step 6.Give User name and Password**
+
+**Step 7.Click on Install Software**
+
+**Step 8.Click on Install**
+
+**Step 9.Click on Close**
+ 
+**Step 10.Open Terminal**
+```sh
+$ node -v
+```
+
+# End of lab
+
+
 
 
 
