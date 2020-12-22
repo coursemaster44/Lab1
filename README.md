@@ -1469,7 +1469,7 @@ $ node -v
 - Click on Yes,Delete  
 
 **Step 6.AWS Management Console>EC2 Dashboard>Instances**
-- Select the running instances>Instance state>Terminate instance**
+- Select the running instances>Instance state>Terminate instance
 - Click on Terminate
 
 **Step 7.AWS Management Console>Services>ElasticBeanStalk>Applications>MyFirstEbsApp>Actions>Delete Application**
