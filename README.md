@@ -1445,7 +1445,39 @@ $ node -v
 
 # End of lab
 
+# Lab 23 
+# Clean_Up-Lab
 
+**Step 1.AWS Management Console>EC2 Dashboard>Auto Scaling Group**
+- Ensure that all the ASG group have following settings by Editing-
+  - Desired - 0
+  - Minimum - 0
+  - Maximum - 0
+  
+**Step 2.AWS Management Console>EC2 Dashboard>Auto Scaling Group>MyFirstASG>Delete**
+ - Type delete to confirm
+ - Click on delete
+  
+**Step 3.AWS Management Console>EC2 Dashboard>Load Balancing>Target groups>MyFirstTargetGroup>Actions>Delete**
+- click YES,Delete
+- Error saying that it is in use by listener or rule
+
+**Step 4.AWS Management Console>EC2 Dashboard>Load Balancing>load Balancers>MyFirstALB>Actions>Delete**
+- Click on Yes,Delete
+
+**Step 5.AWS Management Console>EC2 Dashboard>Load Balancing>Target groups>MyFirstTargetGroup>Actions>Delete**
+- Click on Yes,Delete  
+
+**Step 6.AWS Management Console>EC2 Dashboard>Instances**
+- Select the running instances>Instance state>Terminate instance**
+- Click on Terminate
+
+**Step 7.AWS Management Console>Services>ElasticBeanStalk>Applications>MyFirstEbsApp>Actions>Delete Application**
+- Enter the name in Confirm Application Deletion
+- Click on Delete
+- Note All the resources apart from S3 Bucket that application deployment had created, will be deleted
+
+# End of Lab
 
 
 
