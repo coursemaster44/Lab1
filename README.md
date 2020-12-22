@@ -299,7 +299,7 @@ zip -r dir.zip . -x "_MACOSX"
 
 # lab5#Git-Installation-lab
 ----------------------------------------------------------------------------------------------------------------------------------------------
-### Run the following commands to install Git.
+### Open Terminal and Run the following commands to install Git.
 
 ``` sh
 $ git --version
