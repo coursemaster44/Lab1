@@ -84,16 +84,16 @@ Ec2 Lab With User Data Apache
 
 **Step 1. Goto AWS Management Console>AWS Services>Find services>Type EC2>Click on EC2>EC2 Dashboard>Instances>Launch Instances**
 
-**Step 2.Choose AMI(Amazon Machine Image) Amazon linux 2 AMI Free tier eligible,Click to Select**
+**Step 2. Choose AMI(Amazon Machine Image) Amazon linux 2 AMI Free tier eligible,Click to Select**
 
-**Step 3.Choose Instance type**
+**Step 3. Choose Instance type**
  - Type t2.micro Free tier 
  - vCPUs-1 
  - Memory-1Gib
 
 Click on Next-Configure Instance details
 
-**Step 4.Configure Instance details**
+**Step 4. Configure Instance details**
 - Number of Instances- type 1
 - Network-Default VPC
 - Subnet- No preference
@@ -113,7 +113,7 @@ echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 
   Click on Next:Add Storage
 
-**Step 5.Next Add Storage**
+**Step 5. Next Add Storage**
 - Keep Default Size-8 Gib
 
   Click Next:Add Tags
@@ -123,19 +123,20 @@ echo "Hello World from $(hostname -f)" > /var/www/html/index.html
   
   Click on Next:Configure Security Group
 
-**Step 7.Configure Security Group**
+**Step 7. Configure Security Group**
  -SSH already there
  -Add Rule for HTTP
 
-Click Review and Launch>Launch
+Click Review and Launch
 
-**Step 8. Review**
-Select an existing key pair or create a new key pair
+**Step 8. Review Instance launch**
+Click on Launch
+- Select an existing key pair or create a new key pair
+  - Select create a new pair
+  - Provide key pair name
+  - Click on Download key pair 
 
-- Select create a new pair
-- Provide key pair name
-- Click on Download key pair 
-- Launch instance
+Click on Launch instances
 
 **Step 9. Click on the launched Instance and Click on Details to see the Public IP and other details.**
 
