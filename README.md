@@ -398,6 +398,7 @@ Click on Close
 Lab7# ASG-Lab
 ---------------------------------
 **Step 1 .Goto AWS Console>EC2 Dashboard>Instances>Lunch Templates>Create launch template**
+
 **Step 2 .In Create Lunch template give as following-**
 - Launch template name-MyFirstTemplate
 
@@ -522,8 +523,11 @@ Now Click on Update
 # Lab 9--AWS Account SetUp
 
 **Step 1.Open up your browser and type- setting up your AWS free Tier account**
+
 **Step 2.Click on the first result**
+
 **Step 3.Then Click on Create a Free Account**
+
 **Step 4.Provide the following details-**
 - Email address
 - Password
