@@ -1428,7 +1428,7 @@ Click on Create
  **Step 2.Click on Very first link "Download | Node.js"**
  
  **Step 3.Downloads>LTS version>macos installer**
- - Downloads has been started
+ - Download has been started
  
  **Step 4.Open downloaded file Install Node.js**
  
@@ -1463,7 +1463,7 @@ $ node -v
  - Click on delete
   
 **Step 3.AWS Management Console>EC2 Dashboard>Load Balancing>Target groups>MyFirstTargetGroup>Actions>Delete**
-- click YES,Delete
+- Click YES,Delete
 - Error saying that it is in use by listener or rule
 
 **Step 4.AWS Management Console>EC2 Dashboard>Load Balancing>load Balancers>MyFirstALB>Actions>Delete**
