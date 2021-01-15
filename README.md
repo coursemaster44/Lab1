@@ -254,7 +254,7 @@ Click on Go to environment
 ```
 
 
-**Step 6.ElasticBeanStalk>Applications>MyfirstEbsapp>Application versions**
+**Step 6. ElasticBeanStalk>Applications>MyfirstEbsapp>Application versions**
 
   - Click on Sample Application>nodejs.zip
   
@@ -272,27 +272,27 @@ lab4#ElasticBeanstalk-2
 
 **Step 2. Save this file as nodejs2.zip**
 
-**Step 3.Elastic BeanStalk>Applications>MyfirstEbsapp>Application versions>upload>Sample application-1>choose file>nodejs(2).zip>upload**
+**Step 3. Elastic BeanStalk>Applications>MyfirstEbsapp>Application versions>upload>Sample application-1>choose file>nodejs(2).zip>upload**
 
-**Step 4.Select Sample application-1>Actions>Deploy>Deploy**
+**Step 4. Select Sample application-1>Actions>Deploy>Deploy**
 
-**Step 5.Open VS Studio>index.html>Terminal**
+**Step 5. Open VS Studio>index.html>Terminal**
 
 ```sh
 zip -r dir.zip . -x "_MACOSX"
 ```
 
-**Step 6.MyfirstEbsapp>Application versions>upload>Sample application-2>choose file>dir.zip>upload**
+**Step 6. MyfirstEbsapp>Application versions>upload>Sample application-2>choose file>dir.zip>upload**
 
-**Step 7.Select Sample application-2>Actions>Deploy>Deploy**
+**Step 7. Select Sample application-2>Actions>Deploy>Deploy**
 
-**Step 8.ElasticBeanStalk>Environments>Myfirstebsapp-env>Events**
+**Step 8. ElasticBeanStalk>Environments>Myfirstebsapp-env>Events**
 
-**Step 9.ElasticBeanStalk>Environments>Myfirstebsapp-env**
+**Step 9. ElasticBeanStalk>Environments>Myfirstebsapp-env**
 
  - Click on Application URL 
  
- **Step 10.Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment>select**
+ **Step 10. Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment>select**
  
 
 # End of Lab
@@ -359,7 +359,7 @@ $ git --version
 			  - Availability Zones-Select all Zones 
 -  Configure Security Settings
 
-**Step 9.Configure Security Groups** 
+**Step 9. Configure Security Groups** 
           
 -  Create a new security group
 	- Type-Custom TCP
@@ -369,18 +369,18 @@ $ git --version
 
 Click on Next:Configure Routing
 
-**Step 10.Configure Routing**
+**Step 10. Configure Routing**
           
 - Target group- Select Existing target group Name-MyFirstTargetgroup
 		  
 Click on Register Targets
 
-**Step 11.Click on Next:Review**
+**Step 11. Click on Next:Review**
 
-**Step 12.Click on Create**
+**Step 12. Click on Create**
 Click on Close
 
-**Step 13.Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers**
+**Step 13. Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers**
 
 **Step 14. Copy the DNS name from Description**
 
@@ -388,7 +388,7 @@ Click on Close
            
 - Hit refresh 3 times to see the Traffic is going on all the 3 instances
 
-**Step 16.Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers>MyFirstALB>Listeners**
+**Step 16. Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers>MyFirstALB>Listeners**
 
 - Select listener and Click on Edit
 		   
@@ -397,9 +397,9 @@ Click on Close
 
 Lab7# ASG-Lab
 ---------------------------------
-**Step 1 .Goto AWS Console>EC2 Dashboard>Instances>Lunch Templates>Create launch template**
+**Step 1. Goto AWS Console>EC2 Dashboard>Instances>Lunch Templates>Create launch template**
 
-**Step 2 .In Create Lunch template give as following-**
+**Step 2. In Create Lunch template give as following-**
 - Launch template name-MyFirstTemplate
 
 - Amazon Machine image(AMI)-Amazon Linux 2
@@ -429,21 +429,21 @@ Click on Create Lunch template>View Launch templates
 
 **Step 3. Select "MyFirstTemplate" Goto Actions>Create Auto Scaling group**
 
-**Step 4.Give name "MyFirstASG" in Auto Scaling group name**
+**Step 4. Give name "MyFirstASG" in Auto Scaling group name**
  Click on Next
  
- **Step 5.Network**
+ **Step 5. Network**
  - VPC-default
  - Subnets-Select all the 3 subnets
  
  Click on Next
  
- **Step 5.Load balancing**
+ **Step 5. Load balancing**
  -No Load balancer for as of now
  
  Now Click on Next
  
- **Step 6.Configure group size and scaling policies**
+ **Step 6. Configure group size and scaling policies**
  - Group size
    - Desired capacity-1
    - Minimum capacity-1
@@ -453,28 +453,28 @@ Click on Create Lunch template>View Launch templates
  
  Click on Next
  
-**Step 7.Add Notifications**
+**Step 7. Add Notifications**
  Click on Next
  
-**Step 8.Add Tags**
+**Step 8. Add Tags**
  Click on Next
  
-**Step 9.Review**
+**Step 9. Review**
  Click on Create Auto Scaling group
  
-**Step 10 Select MyFirstASG>Instances>Lifecycle**
+**Step 10. Select MyFirstASG>Instances>Lifecycle**
 - Status-InService
  
-**Step 11.Copy the Instance Ip Address and paste in Internet browser**
+**Step 11. Copy the Instance Ip Address and paste in Internet browser**
 
-**Step 12.EC2>Auto Scaling groups>MyFirstASG>Edit**
+**Step 12. EC2>Auto Scaling groups>MyFirstASG>Edit**
 
 **Step 13. Change Group size**
 - Desired capacity-3
 - Minimum capacity-3
 - Maximum capacity-3
 
-**Step 14.EC2>Auto Scaling groups>MyFirstASG>Instances>Lifecycle**
+**Step 14. EC2>Auto Scaling groups>MyFirstASG>Instances>Lifecycle**
 
 **Step 15. Goto EC2 Dashboard>Instances**
 
@@ -496,10 +496,10 @@ Copy the Ip address of all the three Instances and paste it in Internet Browser 
 
 Now Click on Update
 
-**Step 3.EC2>Auto Scaling groups>MyFirstASG>Instance management**
+**Step 3. EC2>Auto Scaling groups>MyFirstASG>Instance management**
 - See all instances are InService
 
-**Step 4.Select 1st Instance>Actions>Security>Change security groups**
+**Step 4. Select 1st Instance>Actions>Security>Change security groups**
 - Remove "launch-wizard-1" security group
 - Add "port80closed" security group
 
@@ -510,7 +510,7 @@ Now Click on Update
 **Step 7. EC2 Dashboard>Load Balancing>Target Groups>Targets**
 - Wait for Instance to become unhealthy
 
-**Step 8.EC2>Auto Scaling groups>MyFirstASG>Lifecycle**
+**Step 8. EC2>Auto Scaling groups>MyFirstASG>Lifecycle**
 - See that Instance is Terminating
 - Now see new Instance is launching.
 
@@ -522,13 +522,13 @@ Now Click on Update
 
 # Lab 9--AWS Account SetUp
 
-**Step 1.Open up your browser and type- setting up your AWS free Tier account**
+**Step 1. Open up your browser and type- setting up your AWS free Tier account**
 
-**Step 2.Click on the first result**
+**Step 2. Click on the first result**
 
-**Step 3.Then Click on Create a Free Account**
+**Step 3. Then Click on Create a Free Account**
 
-**Step 4.Provide the following details-**
+**Step 4. Provide the following details-**
 - Email address
 - Password
 - Confirm password
@@ -536,7 +536,7 @@ Now Click on Update
 
 Click on Continue
 
-**Step 5.Now again give some more details-**
+**Step 5. Now again give some more details-**
 - Account type
 - Full name
 - Company name
@@ -549,15 +549,15 @@ Click on Continue
 
 Click on Create account and continue
 
-**Step 6.Payment Information details-**
+**Step 6. Payment Information details-**
 - Credit/Debit card number
 - Expiration date
 - Cardholder's name
 - Billing address
 
-**Step 7.Authenticate Transaction with OTP**
+**Step 7. Authenticate Transaction with OTP**
 
-**Step 8.Confirm your identity with following-**
+**Step 8. Confirm your identity with following-**
 - Text message/Voice call
 - Country/Region code
 - Cell Phone Number
@@ -565,7 +565,7 @@ Click on Create account and continue
 
 Click on Send SMS
 
-**Step 9.Enter verification code**
+**Step 9. Enter verification code**
 Click on Verify Code 
 
 **Step 10. Your identity has been verified successfully**
@@ -574,21 +574,21 @@ Click on Continue
 **Step 11. Select a Support Plan**
 - Select Free
 
-**Step 12.Fill the details before it will ask you to sign in to AWS Console**
+**Step 12. Fill the details before it will ask you to sign in to AWS Console**
 - My Role is:Academic/Researcher
 - I am interested in:Devops
 
 Click on Submit
 See Thank You message.
 
-**Step 13.Click on Sign in to the Console**
+**Step 13. Click on Sign in to the Console**
 
-**Step 14.Sign in page-**
+**Step 14. Sign in page-**
 - Provide Root user email address.
 
 Click on Next
 
-**Step 15.Type the password**
+**Step 15. Type the password**
 Click on Signin
 
 Our Free Tier AWS Acoount is Ready.
@@ -599,27 +599,27 @@ Our Free Tier AWS Acoount is Ready.
 # Lab10
 # IAM-User-setup
 
-**Step 1.Login to AWS Console>Click on Your AWS Account>My Billing Dashboard>Billing preferences**
+**Step 1. Login to AWS Console>Click on Your AWS Account>My Billing Dashboard>Billing preferences**
 
-**Step 2.Under Billing Preferences-**
+**Step 2. Under Billing Preferences-**
 - Select Receive Free Usage Alerts
 - Mention Email address
 - Select Receive Billing Alerts
 
 Click on Save preferences.
 
-**Step 3.Goto AWS Console>All Services>CloudWatch>Billing**
+**Step 3. Goto AWS Console>All Services>CloudWatch>Billing**
 - Please Switch Region to # US East(N.Virginia) as CloudWatch displays all billing data
 and alarms in # US East(N.Virginia)
 
-**Step 4.Billing>Create Alarm>Conditions**
+**Step 4. Billing>Create Alarm>Conditions**
 - Threshold type - Static
 - Whenever EstimatedCharges is.. - Greater
 - than - 5 USD
 
 Click on Next
 
-**Step 5.Configure actions>Notification**
+**Step 5. Configure actions>Notification**
 - Alarm state trigger - In alarm
 - Select an SNS topic>Create new topic
     - topic name - Default_CloudWatch_Alarms_Topic
@@ -628,16 +628,16 @@ Click on Next
 	
 	Now Click on Next
 	
-**Step 6.Add name and description**
+**Step 6. Add name and description**
 - Alarm name - MyBillingAlarm
 - Description
 
 Click on Next
 
-**Step 7.Preview all the details and Click on Create Alarm**
+**Step 7. Preview all the details and Click on Create Alarm**
 - Successfully created MyBillingAlarm
 
-**Step 8.Goto your Email inbox and look for the email from AWS**
+**Step 8. Goto your Email inbox and look for the email from AWS**
 - Open Email and click on Confirm Subscription
 - See the message Subscription confirmed
 
@@ -652,41 +652,41 @@ Click on Next
   
  Click on Next:Permissions
  
- **Step 10.Click on Attach existing policies directly**
+ **Step 10. Click on Attach existing policies directly**
  - Select AdministratorAccess
  
  Click on Next:Tags
  
- **Step 11.Click on Next:Review**
+ **Step 11. Click on Next:Review**
  
- **Step 12.Review your choices and Click on Create user**
+ **Step 12. Review your choices and Click on Create user**
  
- **Step 13.Click on Download.csv**
+ **Step 13. Click on Download.csv**
 
 # End of Lab
 
 # lab 11
  # IAM user login
  
-**Step 1.Signin into AWS Console with Account ID and IAM user name.**
+**Step 1. Signin into AWS Console with Account ID and IAM user name.**
 
-**Step 2.Type the following to change the password at first login-**
+**Step 2. Type the following to change the password at first login-**
 - Old password
 - New password
 - Confirm new password
 
 Click on Confirm password change
 
-**Step 3.Open Amazon Document with following link.**
+**Step 3. Open Amazon Document with following link.**
 - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
 
-**Step 4.Open your Terminal and type following command with help of above link.**
+**Step 4. Open your Terminal and type following command with help of above link.**
 ```sh
 $ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 $ sudo installer -pkg AWSCLIV2.pkg -target /
 $ aws --version
 ```
-**Step 5.Follow the link and type command-**
+**Step 5. Follow the link and type command-**
 - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
 ```sh
 $ aws configure
@@ -713,7 +713,7 @@ $ cat configure
 # Lab12
 # IAM-lab-part-1
 
-**Step 1.Goto AWS Management Console>All Services>EC2>Auto Scaling>Auto Scaling groups>MyFirstASG>Edit**
+**Step 1. Goto AWS Management Console>All Services>EC2>Auto Scaling>Auto Scaling groups>MyFirstASG>Edit**
 - Group size
   - Desired capacity-1
   - Minimum capacity-1
@@ -721,7 +721,7 @@ $ cat configure
   
  Click on Update
  
-**Step 2.Goto AWS Management Console>All Services>IAM**
+**Step 2. Goto AWS Management Console>All Services>IAM**
 - Click On Users
 - Click on user name Amit>Permissions>AdministratorAccess>Permissions>{}JSON
 ```sh
@@ -737,7 +737,7 @@ $ cat configure
 }
 ```
 
-**Step 3.Goto IAM Dashboard>Access management>Policies**
+**Step 3. Goto IAM Dashboard>Access management>Policies**
 - Click on drop down arrow of one policy and see JSON policy.
 ```sh
 {
@@ -800,11 +800,11 @@ $ cat configure
 }
 ```
 
-**Step 4.Goto Ec2 Dashboard and see that Ec2 server is up and running**
+**Step 4. Goto Ec2 Dashboard and see that Ec2 server is up and running**
 
-**Step 5.Select Instance>Actions>Connect>connect**
+**Step 5. Select Instance>Actions>Connect>connect**
 
-**Step 6.Run the following commands**
+**Step 6. Run the following commands**
 ```sh
 $ aws s3 ls
 ```
@@ -813,7 +813,7 @@ $ aws s3 ls
 
 # lab13
 # IAM-Lab-part-2
-**Step 1.IAM Dashboard>Roles>Create Role**
+**Step 1. IAM Dashboard>Roles>Create Role**
 - Select Type of trusted entity
   - AWS Service
 - Choose a use case
@@ -821,31 +821,31 @@ $ aws s3 ls
 
 Click on Next:Permissions
 
-**Step 2.Type s3 in search bar**
+**Step 2. Type s3 in search bar**
 - Select AmazonS3FullAccess
 
 Click on Next:Tags
-**Step 3.Click on Next:Review**
+**Step 3. Click on Next:Review**
 
-**Step 4.Provide the Following information-**
+**Step 4. Provide the Following information-**
 - Role name
 - Role description
 
 Click on Create role
 
-**Step 5.Role has been created.Attach this IAM role to EC2 instance**
+**Step 5. Role has been created.Attach this IAM role to EC2 instance**
 - Select the instance and goto Actions>Security>Modify IAM role>choose IAM role>EC2S3FullAccess
 
 Click on Save.
 
-**Step 6.Now EC2 Dashboard>Select Instance>Actions>Connect>connect**
+**Step 6. Now EC2 Dashboard>Select Instance>Actions>Connect>connect**
 - type the following command
 ```sh
 $ aws s3 ls
 ```
 Now able to see the s3 details.
 
-**Step 7.Goto AWS Console>All Services>S3>Buckets>teacheramitk>Permissions>Bucket Policy**
+**Step 7. Goto AWS Console>All Services>S3>Buckets>teacheramitk>Permissions>Bucket Policy**
 ```sh
 {
     "Version": "2012-10-17",
@@ -865,10 +865,10 @@ Now able to see the s3 details.
 }
 ```
 
-**Step 8.IAM Dashboard>Roles>Ec2S3FullAccess>Permissions**
+**Step 8. IAM Dashboard>Roles>Ec2S3FullAccess>Permissions**
 - See JSON Policy for AmazonS3FullAccess
 
-**Step 9.IAM Dashboard>Roles>Ec2S3FullAccess>Trust relationships>Edit Trust Relationship**
+**Step 9. IAM Dashboard>Roles>Ec2S3FullAccess>Trust relationships>Edit Trust Relationship**
 ```sh
 {
   "Version": "2012-10-17",
@@ -890,9 +890,9 @@ Now able to see the s3 details.
 # Lab 14
 # Vpc-lab-1
 
-**Step 1.AWS Management Console>All Services>VPC(Mumbai Region)**
+**Step 1. AWS Management Console>All Services>VPC(Mumbai Region)**
 
-**Step 2.Following Amazon VPC resources are in Asia Pacific(Mumbai)**
+**Step 2. Following Amazon VPC resources are in Asia Pacific(Mumbai)**
 - VPCs - 1
 - Subnets - 3
 - Route Tables -1
@@ -925,16 +925,16 @@ Click on Region and change it to US East(N.Virginia) us-east-1
   - First entry allows access within the VPC
   - Second entry allows outside the VPC
 
-**Step 7.Goto AWS Console>Services>VPC>Security>Network ACLs>Subnet associations**
+**Step 7. Goto AWS Console>Services>VPC>Security>Network ACLs>Subnet associations**
 - Acting on all the three subnets
 - Inbound Rules - ALLOW ALL
 - Outbound Rules - ALLOW ALL
 
-**Step 8.Goto AWS Console>Services>VPC>Security>Security Groups**
+**Step 8. Goto AWS Console>Services>VPC>Security>Security Groups**
 - Select Default security group>Inbound Rules
   - Accepts traffic from an Ec2 instance with the same Security Group
 
-**Step 9.Goto AWS Console>Services>VPC>Internet Gateways**  
+**Step 9. Goto AWS Console>Services>VPC>Internet Gateways**  
 - 1 Internet Gateway attached to Default VPC
 
 # End of lab
@@ -950,7 +950,7 @@ Click on Region and change it to US East(N.Virginia) us-east-1
   
  Click on Create VPC
 
-**Step 2.VPC has been created successfully**
+**Step 2. VPC has been created successfully**
 
 **Step 3. Goto VPC>Subnets>Create Subnet**
 Give following details
@@ -961,7 +961,7 @@ Give following details
 
 Click on Create Subnet
 
-**Step 4.Goto VPC>Subnets>Create Subnet**
+**Step 4. Goto VPC>Subnets>Create Subnet**
 Give following details
 - VPC ID - CustVPC
 - Subnet name - PvtSub
@@ -970,10 +970,10 @@ Give following details
 
 Click on Create Subnet
 
-**Step 5.Goto AWS Console>Services>VPC>Route Tables**
+**Step 5. Goto AWS Console>Services>VPC>Route Tables**
 - Click on CustVPC route table and rename it to "DefRTCustVPC"
 
-**Step 9.Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
+**Step 9. Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
 Create route table**
 Provide the details-
 - Name - CustRTCustVPC
@@ -981,7 +981,7 @@ Provide the details-
 
 Click on Create
 
-**Step 9.Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
+**Step 9. Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
 - Give Name - CustVPCIG
 
 Click on Create Internet Gateway
@@ -990,34 +990,34 @@ Click on Create Internet Gateway
 - Select CustVPC
 - Attach Internet Gateway
 
-**Step 11.Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Routes**
+**Step 11. Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Routes**
 - It has one entry that allows any access within the VPC
 
 
-**Step 12.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Routes**
+**Step 12. Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Routes**
 - It has one entry that allows any access within the VPC
 
-**Step 13.Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Subnet associations**
+**Step 13. Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Subnet associations**
 - No Subnet association
 
-**Step 14.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Subnet associations**
+**Step 14. Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Subnet associations**
 - No Subnet association
 
-**Step 15.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Subnet associations>Edit subnet associations**
+**Step 15. Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Subnet associations>Edit subnet associations**
 - Select PubSub
 
  Click on Save.
 
 - Now CustRTCustVPC is associated with PubSub 
 
-**Step 16.Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Routes>Edit routes>Add route**
+**Step 16. Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Routes>Edit routes>Add route**
 Give the following details.
 - Destination - 0.0.0.0/0
 - Target - Internet Gateway
 
 Click on Save routes and click on Close
 
-**Step 17.Goto VPC>Subnets>PubSub>Actions>Modify auto-assign IP settings**
+**Step 17. Goto VPC>Subnets>PubSub>Actions>Modify auto-assign IP settings**
 - Select "Enable auto-assign public IPv4 address"
 
 Click on Save
@@ -1027,13 +1027,13 @@ Now Auto-assign public IPv4 address has YES entry.
 # Lab 16
 VPC-Lab-3
 
-**Step 1.Goto AWS Console>Services>EC2>EC2 Dashboard>Instances>Launch Instances**
+**Step 1. Goto AWS Console>Services>EC2>EC2 Dashboard>Instances>Launch Instances**
 - Select Amazon Linux2 AMI
 - Select Instance type - t2.micro
 
 Click on Next:Configure Instance Details
 
-**Step 2.Provide the following details-**
+**Step 2. Provide the following details-**
 - Select CustVPC 
 - Select Subnet - PubSub
 - Auto-assign Public IP - Use subnet setting (Enable)
@@ -1049,9 +1049,9 @@ echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 
 Click on Next:Add Storage
 
-**Step 3.Click on Next:Add Tags**
+**Step 3. Click on Next:Add Tags**
 
-**Step 4.Click on Next:Configure Security Group**
+**Step 4. Click on Next:Configure Security Group**
 - Create a new security group
 - Click on Add rule
   - Type - HTTP
@@ -1061,18 +1061,18 @@ Click on Next:Add Storage
   
 Click on Review and Launch>Launch
 
-**Step 5.Choose an existing key pair>Select key pair**
+**Step 5. Choose an existing key pair>Select key pair**
 
 Click on Launch Instances
 
 
-**Step 6.Goto EC2 Dashboard>Instances>Launch Instances**
+**Step 6. Goto EC2 Dashboard>Instances>Launch Instances**
 - Select Amazon Linux2 AMI
 - Select Instance type - t2.micro
 
 Click on Next:Configure Instance Details
 
-**Step 7.Provide the following details-**
+**Step 7. Provide the following details-**
 - Select - CustVPC 
 - Select Subnet - PvtSub
 - Auto-assign Public IP - Use subnet setting (Disable)
@@ -1081,29 +1081,29 @@ Click on Next:Configure Instance Details
 
 Click on Next:Add Storage
 
-**Step 8.Click on Next:Add Tags**
+**Step 8. Click on Next:Add Tags**
 
-**Step 9.Click on Next:Configure Security Group**
+**Step 9. Click on Next:Configure Security Group**
 - Select an existing security group
 
   
 Click on Review and Launch>Launch
 
-**Step 10.Choose an existing key pair>Select key pair**
+**Step 10. Choose an existing key pair>Select key pair**
 
 Click on Launch Instances
 
-**Step 11.Goto EC2Dashboard>Instances**
+**Step 11. Goto EC2Dashboard>Instances**
 - Select the Public Instance
   - Copy the Public IPv4 address
   - Paste it in the Browser
   - Public Server is accessible
 
-**Step 12.EC2Dashboard>Public instance>Actions>Connect>connect**
+**Step 12. EC2Dashboard>Public instance>Actions>Connect>connect**
 - We are into EC2 server
   - Ping google.com and see the success.
   
-**Step 13.EC2Dashboard>Private instance** 
+**Step 13. EC2Dashboard>Private instance** 
 - No Public Ipv4 address
 
 # End of Lab
@@ -1114,7 +1114,7 @@ Click on Launch Instances
 # lab17
 # s3-lab
 
-**Step 1.AWS Management Console>All Services>S3>Create Bucket**
+**Step 1. AWS Management Console>All Services>S3>Create Bucket**
 - Provide globally unique Bucket name - "teacheramitk"
 - Region
 - Block all public access - leave as for now
@@ -1122,10 +1122,10 @@ Click on Launch Instances
 
 Click on Create Bucket.
 
-**Step 2.Click on created Bucket "teacheramitk"**
+**Step 2. Click on created Bucket "teacheramitk"**
 - Click on Upload
 
-**Step 3.Upload>Add Files**
+**Step 3. Upload>Add Files**
 - Select file "testfile1.txt" to upload
 
 Upload scucceeded
@@ -1139,7 +1139,7 @@ Upload scucceeded
 - Click on Save changes
 - type confirm and click on confirm
 
-**Step 6.Amazon S3>teacheramitk>object"testfile1.txt">Object actions>Make public>Click Make public**
+**Step 6. Amazon S3>teacheramitk>object"testfile1.txt">Object actions>Make public>Click Make public**
 - successfully edited public access
 
 **Step 7. Now Click on Object URL**
@@ -1167,22 +1167,22 @@ Upload scucceeded
 
 Click on Save changes
 
-**Step 9.Goto Amazon S3>teacheramitk>Upload**
+**Step 9. Goto Amazon S3>teacheramitk>Upload**
 - Add files "testfile2.txt"
 - Click on Object URl of "testfile2.txt"
 - file is accessible
 
-**Step 10.Amazon S3>teacheramitk>Properties>Bucket Versioning>Edit>Enable**
+**Step 10. Amazon S3>teacheramitk>Properties>Bucket Versioning>Edit>Enable**
 - Click on Save changes
 
-**Step 11.Goto Amazon S3>teacheramitk>Objects>Upload>Add files**
+**Step 11. Goto Amazon S3>teacheramitk>Objects>Upload>Add files**
 - Select "testfile3.txt"
 - Click on Upload
 - Click on "testfile3.txt"
 - Click on Object URL
 - File is accessible
 
-**Step 12 Try to Upload different version of same file**
+**Step 12. Try to Upload different version of same file**
 - Goto Amazon S3>teacheramitk>Objects>Upload>Add files
 - Secret version 2 of "testfile3.txt"
 - Click on Upload
@@ -1192,7 +1192,7 @@ Click on Save changes
 - Amazon S3>teacheramitk>"testfile3.txt">Versions
 - Note the upload timings of different versions
 
-**Step 13 Open AWS CLI Terminal**
+**Step 13. Open AWS CLI Terminal**
 ```sh
 $ aws s3 ls
 ```
@@ -1201,20 +1201,20 @@ $ aws s3 ls
 # lab-18
 # VSCode-install-Lab
 
-**Step 1.Open Internet Browser and type "install visual studio code" in google search**
+**Step 1. Open Internet Browser and type "install visual studio code" in google search**
 
 **Step 2. Click on the very first link**
 
 **Step 3. Select your Operating system link**
 - As soon as you click on link it will start downloading vscode zip file
 
-**Step 4.Goto Downloads>VSCode-drawin-stable.zip>RightClick>open with>Archive Utility**
+**Step 4. Goto Downloads>VSCode-drawin-stable.zip>RightClick>open with>Archive Utility**
 
-**Step 5.File is Unzipped**
+**Step 5. File is Unzipped**
 
 **Step 6. Now Move content to Application folder**
 
-**Step 7.Goto Applications and click on VSCode icon to access it**
+**Step 7. Goto Applications and click on VSCode icon to access it**
 
 # End of lab
 
@@ -1223,44 +1223,44 @@ $ aws s3 ls
 # lab-19
 # # CloudWatch-Alarm-Lab-1
 
-**Step 1.Launch Ec2 Instance**
+**Step 1. Launch Ec2 Instance**
 - Goto AWS Management Console>Services>EC2>EC2 Dashboard>Instances>Launch Instances
 - Select Amazon Linux2 AMI
 - Select Instance type - t2.micro
 
 Click on Next:Configure Instance Details
 
-**Step 2.Keep details default**
+**Step 2. Keep details default**
 
 Click on Next:Add Storage
 
-**Step 3.Click on Next:Add Tags**
+**Step 3. Click on Next:Add Tags**
 
-**Step 4.Click on Next:Configure Security Group**
+**Step 4. Click on Next:Configure Security Group**
 - Select an existing security group
 
   Click on Review and Launch>Launch
 
-**Step 5.Choose an existing key pair>Select key pair**
+**Step 5. Choose an existing key pair>Select key pair**
 
 - Click on Launch Instances
 
-**Step 6.Goto EC2Dashboard>Instance>Monitoring**
+**Step 6. Goto EC2Dashboard>Instance>Monitoring**
 -Wait for sometime for Metrics to be created
 
-**Step 7.Goto AWS Management Console>Services>CloudWatch>Metrics>All metrics>EC2>Per-Instance Metrics** 
+**Step 7. Goto AWS Management Console>Services>CloudWatch>Metrics>All metrics>EC2>Per-Instance Metrics** 
 - Copy the instance-id from EC2 Dashboard
 - Paste it in the Per-Instance Metrics Search bar
 - Select the CPUUtilization Metric in drop-down menu
 
-**Step 8.Goto AWS Management Console>Services>CloudWatch>Alarms>Create alarm**
+**Step 8. Goto AWS Management Console>Services>CloudWatch>Alarms>Create alarm**
 - Select Metric for alarm
   - All metrics>per-Instance Metrics
   - Copy the instance-id from EC2 Dashboard
   - Select the CPUUtilization Metric in drop-down menu
 Click on Select Metric
 
-**Step 9.Specify metric and conditions**
+**Step 9. Specify metric and conditions**
 - Change Period - 1 minute
 - Conditions - Static
   - Whenever CPUUtilization is ... - Lower
@@ -1268,7 +1268,7 @@ Click on Select Metric
  
 Click on Next
 
- **Step 10.Now Configure actions>Notification - Click on Remove (As We are using EC2 action Below)** 
+ **Step 10. Now Configure actions>Notification - Click on Remove (As We are using EC2 action Below)** 
 - EC2 action>Add Ec2 action
   - Alarm state trigger
     - In Alarm
@@ -1277,17 +1277,17 @@ Click on Next
 		
 Click on Next
 
-**Step 11.Add name and description**
+**Step 11. Add name and description**
 - Alarm name - MyFirstAlarm
 
 Click on Next
 
-**Step 12.Preview and create**
+**Step 12. Preview and create**
 - see step2:configure actions
 
 Click on Create alarm
 
-**Step 13.CloudWatch>Alarms>MyFirstAlarm**
+**Step 13. CloudWatch>Alarms>MyFirstAlarm**
 - Showing insufficient data (Wait for some time)
 - See in EC2Dashboard instance is running fine
 - Check it after some time Instance is stopped now.
@@ -1300,17 +1300,17 @@ CPUUtilization was below 40 percent and CloudWatch stopped it.
 # Lab 20
 # CloudWatch-lab-2
 
-**Step 1.Goto AWS Management Console>Services>Simple Notification  Service>Create topic**
+**Step 1. Goto AWS Management Console>Services>Simple Notification  Service>Create topic**
 - Give name - MyFirstTopic
 
 Click on Next Step
 
-**Step 2.Create Topic>Details>Standard**
+**Step 2. Create Topic>Details>Standard**
 - Keep everthing default
 
 Click on Create Topic
 
-**Step 3.Goto AWS Management Console>Services>Amazon SNS>Subcriptions>Create subscription**
+**Step 3. Goto AWS Management Console>Services>Amazon SNS>Subcriptions>Create subscription**
 - Details
   - Topic ARN - selct MyFirstTopic
   - Protocol - Email
@@ -1343,12 +1343,12 @@ Than Targets>Add Targets>SNS topic>MyFirstTopic
 
 Click on Configure details.
 
-**Step 7.Configure rule details**
+**Step 7. Configure rule details**
 - Name - MyFirstEvent
 
 Click on Create rule.
 
-**Step 8.Goto AWS Management Console>Services>EC2>EC2 Dashboard>Instances**
+**Step 8. Goto AWS Management Console>Services>EC2>EC2 Dashboard>Instances**
 - Select the Instance>Instance state>Start the Instance
   - CloudWatch will send the notification to SNS Topic
   - Check for Notification in Email inbox
@@ -1358,7 +1358,7 @@ Click on Create rule.
 # Lab 21
 # DynamoDb-Lab
 
-**Step 1.Goto AWS Management Console>Services>DynamoDB>Create Table**
+**Step 1. Goto AWS Management Console>Services>DynamoDB>Create Table**
 - Give Table name - Movies
 - Primary key 
   - Partition key- Year
@@ -1377,14 +1377,16 @@ Click on Create rule.
 
 Click on Create 
 
-**Step 2.TABLE Created successfully**
+**Step 2. TABLE Created successfully**
 - Goto Movies>Items>create item
+- Provide the following values:
   - Year - 1997
   - title - As good as it gets
  
  Click on Save
  
- **Step 2. Goto Movies>Items>create item**
+ **Step 3. Goto Movies>Items>create item**
+ - Provide the following values:
  - year - 2020
  - title - test1
  - Click on +
@@ -1393,7 +1395,8 @@ Click on Create
  
  Click on save
  
- **Step 2. Goto Movies>Items>create item**
+ **Step 4. Goto Movies>Items>create item**
+ - Provide the following values:
  - year - 1997
  - title - Titanic
  - Click on +
@@ -1402,47 +1405,49 @@ Click on Create
 
  Click on Save
  
- **Step 3. Goto Movies>Items>select 1997>Actions>Edit**
+ **Step 5. Goto Movies>Items>select 1997>Actions>Edit**
  - Click on +
  - Append>Number
  - Give value rating to Number - 9
  
  Click on Save
  
- **Step 4. Goto Movies>Items>1997>Actions>Delete>Delete**
+ **Step 6. Goto Movies>Items>1997>Actions>Delete>Delete**
  
- **Step 5. Goto Movies>Items>Select from drop-down>Query**
+ **Step 7. Goto Movies>Items>Select from drop-down>Query**
+ - Provide the following values:
  - Partition key 1997
  - Sort key - As good as it gets
  
- **Step 6. Goto Movies>Delete Table>delete**
- 
- # End of lab
+ **Step 8. Goto Movies>Delete Table>delete**
+ - Table has been deleted
+
+# End of lab
  
  
  # lab 22
  # nodejs-lab
  
- **Step 1.Open google in Internet Browser and type "install node js on mac"**
+ **Step 1. Open google in Internet Browser and type "install node js on mac"**
  
- **Step 2.Click on Very first link "Download | Node.js"**
+ **Step 2. Click on Very first link "Download | Node.js"**
  
- **Step 3.Downloads>LTS version>macos installer**
+ **Step 3. Downloads>LTS version>macos installer**
  - Download has been started
  
- **Step 4.Open downloaded file Install Node.js**
+ **Step 4. Open downloaded file Install Node.js**
  
- **Step 5.Click on Continue>continue>Agree>Install**
+ **Step 5. Click on Continue>continue>Agree>Install**
 
- **Step 6.Give User name and Password**
+ **Step 6. Give User name and Password**
 
-**Step 7.Click on Install Software**
+**Step 7. Click on Install Software**
 
-**Step 8.Click on Install**
+**Step 8. Click on Install**
 
-**Step 9.Click on Close**
+**Step 9. Click on Close**
  
-**Step 10.Open Terminal**
+**Step 10. Open Terminal**
 ```sh
 $ node -v
 ```
@@ -1452,31 +1457,31 @@ $ node -v
 # Lab 23 
 # Clean_Up-Lab
 
-**Step 1.AWS Management Console>EC2 Dashboard>Auto Scaling Group**
+**Step 1. AWS Management Console>EC2 Dashboard>Auto Scaling Group**
 - Ensure that all the ASG group have following settings by Editing-
   - Desired - 0
   - Minimum - 0
   - Maximum - 0
   
-**Step 2.AWS Management Console>EC2 Dashboard>Auto Scaling Group>MyFirstASG>Delete**
+**Step 2. AWS Management Console>EC2 Dashboard>Auto Scaling Group>MyFirstASG>Delete**
  - Type delete to confirm
  - Click on delete
   
-**Step 3.AWS Management Console>EC2 Dashboard>Load Balancing>Target groups>MyFirstTargetGroup>Actions>Delete**
+**Step 3. AWS Management Console>EC2 Dashboard>Load Balancing>Target groups>MyFirstTargetGroup>Actions>Delete**
 - Click YES,Delete
 - Error saying that it is in use by listener or rule
 
-**Step 4.AWS Management Console>EC2 Dashboard>Load Balancing>load Balancers>MyFirstALB>Actions>Delete**
+**Step 4. AWS Management Console>EC2 Dashboard>Load Balancing>load Balancers>MyFirstALB>Actions>Delete**
 - Click on Yes,Delete
 
-**Step 5.AWS Management Console>EC2 Dashboard>Load Balancing>Target groups>MyFirstTargetGroup>Actions>Delete**
+**Step 5. AWS Management Console>EC2 Dashboard>Load Balancing>Target groups>MyFirstTargetGroup>Actions>Delete**
 - Click on Yes,Delete  
 
-**Step 6.AWS Management Console>EC2 Dashboard>Instances**
+**Step 6. AWS Management Console>EC2 Dashboard>Instances**
 - Select the running instances>Instance state>Terminate instance
 - Click on Terminate
 
-**Step 7.AWS Management Console>Services>ElasticBeanStalk>Applications>MyFirstEbsApp>Actions>Delete Application**
+**Step 7. AWS Management Console>Services>ElasticBeanStalk>Applications>MyFirstEbsApp>Actions>Delete Application**
 - Enter the name in Confirm Application Deletion
 - Click on Delete
 - Note All the resources apart from S3 Bucket that application deployment had created, will be deleted
