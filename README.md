@@ -268,15 +268,18 @@ Click on Go to environment
 lab4#ElasticBeanstalk-2
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Step 1. Open node.js in VS studio and do changes for background color**
+**Step 1. Open Downloaded node.js Application from AWS  in Visual Studio Code and modify it for background color**
+- Link to Download - https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-getstarted.html
 
-**Step 2. Save this file as nodejs2.zip**
+**Step 2. Save the modification in this file as nodejs2.zip**
 
 **Step 3. Elastic BeanStalk>Applications>MyfirstEbsapp>Application versions>upload>Sample application-1>choose file>nodejs(2).zip>upload**
 
 **Step 4. Select Sample application-1>Actions>Deploy>Deploy**
+- Error: Failed to deploy because of some Zipped files 
 
-**Step 5. Open VS Studio>index.html>Terminal**
+**Step 5. Now Open VS Code>index.html>Terminal**
+- To Remove _MACOSX run the following command
 
 ```sh
 zip -r dir.zip . -x "_MACOSX"
@@ -291,8 +294,13 @@ zip -r dir.zip . -x "_MACOSX"
 **Step 9. ElasticBeanStalk>Environments>Myfirstebsapp-env**
 
  - Click on Application URL 
+ - Backround color has been changed
  
- **Step 10. Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment>select**
+ **Step 10. ElasticBeanStalk>Environments>Myfirstebsapp-env>Upload and Deploy** 
+ - Click if you want to modify again
+ 
+ **Step 11. Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment**
+ - Select Web server environment to create new environment from this application
  
 
 # End of Lab
