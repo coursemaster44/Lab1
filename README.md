@@ -301,7 +301,6 @@ zip -r dir.zip . -x "_MACOSX"
  **Step 11. Elastic BeanStalk>Applications>MyfirstEbsapp>Actions>Create Environment>Web server environment**
  - Select Web server environment to create new environment from this application
  
-
 # End of Lab
 
 # lab5#Git-Installation-lab
