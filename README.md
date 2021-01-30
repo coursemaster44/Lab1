@@ -859,11 +859,12 @@ $ cat configure
 }
 ```
 
-**Step 4. Goto Ec2 Dashboard and see that Ec2 server is up and running**
+**Step 4. Goto Ec2 Dashboard and copy the Public Ip of Instance**
+- Paste the IP in Browser to see it running
 
-**Step 5. Select Instance>Actions>Connect>connect**
+**Step 5. Goto Ec2 Dashboard>Instance-igvgvhxxx>Actions>Connect>connect**
 
-**Step 6. Run the following commands**
+**Step 6. Run the following command**
 ```sh
 $ aws s3 ls
 ```
