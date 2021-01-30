@@ -873,7 +873,7 @@ $ aws s3 ls
 
 # lab13
 # IAM-Lab-part-2
-**Step 1. IAM Dashboard>Roles>Create Role**
+**Step 1. Goto AWS Console>IAM>IAM Dashboard>Roles>Create Role**
 - Select Type of trusted entity
   - AWS Service
 - Choose a use case
@@ -888,22 +888,22 @@ Click on Next:Tags
 **Step 3. Click on Next:Review**
 
 **Step 4. Provide the Following information-**
-- Role name
+- Role name - EC2S3FullAccess
 - Role description
 
 Click on Create role
 
-**Step 5. Role has been created.Attach this IAM role to EC2 instance**
+**Step 5. Role has been created now attach this IAM role to EC2 instance**
 - Select the instance and goto Actions>Security>Modify IAM role>choose IAM role>EC2S3FullAccess
 
-Click on Save.
+Click on Save
 
 **Step 6. Now EC2 Dashboard>Select Instance>Actions>Connect>connect**
 - type the following command
 ```sh
 $ aws s3 ls
 ```
-Now able to see the s3 details.
+Now able to see the s3 details
 
 **Step 7. Goto AWS Console>All Services>S3>Buckets>teacheramitk>Permissions>Bucket Policy**
 ```sh
