@@ -159,25 +159,22 @@ Click on Launch instances
 **Step 1. Goto AWS Management Console>AWS Services>Find services>Type Elastic Beanstalk>Click on Elastic Beanstalk>Elastic Beanstalk>Create Application**
 
 
-**Step 2. Create a Web App**
-   - Application Name-MyfirstEbsapp
+**Step 2. In Create a Web App**
+   - Application Name - MyfirstEbsapp
 		 
-		 - Platform 
-		    - Platform 
-		       - Node.js
-			- Platform branch
-			   - Node.js 12 running on 64bit Amazon Llinux2
-			- Platform version
-			   - 5.2.3(Recommended)
+   - Platform 
+     - Platform 
+       - Node.js 
+     - Platform branch
+       - Node.js 12 running on 64bit Amazon Llinux2
+     - Platform version
+       - 5.2.3(Recommended)
 			   
-	  
-   - Application Code
-			   - Select Sample application
+   - Application Code- Select Sample application
 			 
 	
  Click on Create Application.
 	
-
 
 **Step 3. Creating environment started**
 
@@ -214,15 +211,15 @@ Elastic BeanStalk launches an environment named MyfirstEbsapp-env with these AWS
 
 - Click on MyfirstEbsapp-env
 
-Click on Go to environment
+Click on Go to environment to see sample application running
 
 
 
 **Step 5. Goto each component and verify the resources created by Elastic BeanStalk**
 
-``` 
+
    - S3 Bucket
-        -Goto AWS Console>All Services>S3>Buckets
+     -Goto AWS Console>All Services>S3>Buckets>elasticbeanstalk-ap-south-1-XXXX
         
    
    - Auto Scaling launch configuration
@@ -230,29 +227,30 @@ Click on Go to environment
          
 		
    - Auto Scaling Group
-         - AWS Console>Services>Ec2>Auto Scaling>Auto Scaling Groups
+         - AWS Console>Services>Ec2>Auto Scaling>Auto Scaling Groups>awseb-a-xxx
          
 		 
    - EC2 instance
-         - AWS Console>All services>EC2 >Instances>    
+         - AWS Console>All services>EC2 >Instances>Myfirstebsapp-env   
          
 		
    - Target Group
-         - Goto AWS Console>All Services>EC2>Load Balancer>Target Group>Targets
+     - Goto AWS Console>All Services>EC2>Load Balancer>Target Group>awseb-AWSEB-xxxx
 		 
    
    - Load Balancer
-         - AWS Console>Services>EC2>Load Balancing>Load balancers>awseb-AWSEB-LoadBalancer>Listeners>Edit
+     - AWS Console>Services>EC2>Load Balancing>Load balancers>awseb-AWSEB-LoadBalancer>Listeners>Edit>See Forward to-xx
          
 	
   -  Security Groups
-         - Goto AWS Console>All Services>EC2>Security Groups
+     - Goto AWS Console>All Services>EC2>Security Groups
+       - 2 SGs with name Myfirstebsapp-env
          
 		 
   -  CloudWatch Alarms
-         - AWS Console>Services>CloudWatch>Alarms>Alarm	 
+         - AWS Console>Services>CloudWatch>Alarms
+	   - 2 alarms(Scale-in,scale-out) created awseb-xxx 
 		 
-```
 
 
 **Step 6. ElasticBeanStalk>Applications>MyfirstEbsapp>Application versions**
