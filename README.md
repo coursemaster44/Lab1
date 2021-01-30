@@ -1497,11 +1497,12 @@ Click on Create
  **Step 1. Open google in Internet Browser and type "install node js on mac"**
  
  **Step 2. Click on Very first link "Download | Node.js"**
+ - nodejs.org/en/download
  
  **Step 3. Downloads>LTS version>macos installer**
  - Download has been started
  
- **Step 4. Open downloaded file Install Node.js**
+ **Step 4. Open downloaded file to Install Node.js**
  
  **Step 5. Click on Continue>continue>Agree>Install**
 
@@ -1513,7 +1514,9 @@ Click on Create
 
 **Step 9. Click on Close**
  
-**Step 10. Open Terminal**
+**Step 10. Open Terminal in MACOS**
+
+Run the following command
 ```sh
 $ node -v
 ```
@@ -1523,7 +1526,7 @@ $ node -v
 # Lab 23 
 # Clean_Up-Lab
 
-**Step 1. AWS Management Console>EC2 Dashboard>Auto Scaling Group**
+**Step 1. Goto AWS Management Console>EC2 Dashboard>Auto Scaling Group**
 - Ensure that all the ASG group have following settings by Editing-
   - Desired - 0
   - Minimum - 0
