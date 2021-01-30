@@ -1036,31 +1036,31 @@ Click on Create Subnet
 **Step 5. Goto AWS Console>Services>VPC>Route Tables**
 - Click on CustVPC route table and rename it to "DefRTCustVPC"
 
-**Step 9. Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
-Create route table**
+**Step 6. Goto AWS Console>Services>VPC>Route tables>Create route Table**
+
 Provide the details-
 - Name - CustRTCustVPC
 - VPC - CustVPC
 
 Click on Create
 
-**Step 9. Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
+**Step 7. Goto AWS Console>Services>VPC>Internet Gateways>Create Internet Gateway**
 - Give Name - CustVPCIG
 
 Click on Create Internet Gateway
 
-**Step 10. Goto AWS Console>Services>VPC>Internet Gateways>CustVPCIG>Actions>Attach to VPC**
+**Step 8. Goto AWS Console>Services>VPC>Internet Gateways>CustVPCIG>Actions>Attach to VPC**
 - Select CustVPC
 - Attach Internet Gateway
 
-**Step 11. Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Routes**
+**Step 9. Goto AWS Console>Services>VPC>Route Tables>DefRTCustVPC>Routes**
 - It has one entry that allows any access within the VPC
 
 
-**Step 12. Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Routes**
+**Step 10. Goto AWS Console>Services>VPC>Route Tables>CustRTCustVPC>Routes**
 - It has one entry that allows any access within the VPC
 
-**Step 13. Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Subnet associations**
+**Step 11. Goto AWS Console>Services>VPC>Route Table>DefRTCustVPC>Subnet associations**
 - No Subnet association
 
 **Step 14. Goto AWS Console>Services>VPC>Route Table>CustRTCustVPC>Subnet associations**
