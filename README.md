@@ -1337,7 +1337,7 @@ Click on Next
 - EC2 action>Add Ec2 action
   - Alarm state trigger
     - In Alarm
-	  - Take the following action
+	  - Take the following action...
 	    - Select Stop the instance
 		
 Click on Next
@@ -1348,7 +1348,6 @@ Click on Next
 Click on Next
 
 **Step 12. Preview and create**
-- see step2:configure actions
 
 Click on Create alarm
 
