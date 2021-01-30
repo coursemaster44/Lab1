@@ -637,6 +637,7 @@ Click on Continue
 
 Click on Submit
 See Thank You message
+
 **Step 13. Click on Sign in to the Console**
 - Link - https://signin.aws.amazon.com
 
