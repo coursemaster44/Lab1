@@ -673,7 +673,7 @@ and alarms in # US East(N.Virginia)
 **Step 4. Billing>Create Alarm>Conditions**
 - Threshold type - Static
 - Whenever EstimatedCharges is.. - Greater
-- than - 5 USD
+- than... - 5 USD
 
 Click on Next
 
@@ -682,9 +682,9 @@ Click on Next
 - Select an SNS topic>Create new topic
     - topic name - Default_CloudWatch_Alarms_Topic
 	- Provide Email address to receive the notification.
-	Click on Create Topic
+- Click on Create Topic
 	
-	Now Click on Next
+Now Click on Next
 	
 **Step 6. Add name and description**
 - Alarm name - MyBillingAlarm
@@ -720,6 +720,7 @@ Click on Next
  **Step 12. Review your choices and Click on Create user**
  
  **Step 13. Click on Download.csv**
+ 
 
 # End of Lab
 
