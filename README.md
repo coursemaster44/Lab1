@@ -1279,7 +1279,7 @@ $ aws s3 ls
 
 **Step 6. Now Move content to Application folder**
 
-**Step 7. Goto Applications and click on VSCode icon to access it**
+**Step 7. Goto Applications and click on VisualStudioCode icon to access it**
 
 # End of lab
 
