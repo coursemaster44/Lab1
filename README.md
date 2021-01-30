@@ -388,7 +388,7 @@ Type # “cd test” to move into test directory
 
 **Step 3. Register targets**
           
- - Select the available instances
+- Select the available instances
 - Ports for the selected instances-80
 - Click on "Include as pending below"
 		   
@@ -396,7 +396,7 @@ Type # “cd test” to move into test directory
 		   
 **Step 4. "MyFirstTargetgroup" Target Group has been created**
 
-**Step 5. Goto MyFirstTargetgroup>Targets**
+**Step 5. Goto MyFirstTargetgroup>Targets>Registered targets**
               
  - Status is showing "unused"
 			  
@@ -412,17 +412,17 @@ Type # “cd test” to move into test directory
 	- Ip address type- ipv4
 -  Listeners-Protocol-HTTP,Port-80
 -  Availability Zones
-		      - VPC-Default
-			  - Availability Zones-Select all Zones 
--  Configure Security Settings
+   - VPC-Default
+   - Availability Zones-Select all Zones 
+   
+Click on Next:Configure Security Settings
 
-**Step 9. Configure Security Groups** 
-          
--  Create a new security group
+**Step 9. Click on Next:Configure Security Groups** 
+  -  Create a new security group
 	- Type-Custom TCP
-    - Protocol-TCP
-    - Port Range-80	
-    - Source-Custom(0.0.0.0./0)	
+        - Protocol-TCP
+        - Port Range-80	
+        - Source-Custom(0.0.0.0./0)	
 
 Click on Next:Configure Routing
 
@@ -437,9 +437,10 @@ Click on Register Targets
 **Step 12. Click on Create**
 Click on Close
 
-**Step 13. Go to AWS Console>All Services>EC2>Load Balancing>Load Balancers**
+**Step 13. Goto AWS Console>All Services>EC2>Load Balancing>Load Balancers>MyFirstALB**
+- It will take some time for state change from provisioning to active
 
-**Step 14. Copy the DNS name from Description**
+**Step 14. Copy the DNS name from the description of ALB**
 
 **Step 15. Paste the DNS name in Internet Browser**
            
