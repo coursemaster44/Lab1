@@ -593,8 +593,8 @@ Now Click on Update
 
 Click on Continue
 
-**Step 5. Now again give some more details-**
-- Account type
+**Step 5. Give details for Contact Information**
+- Account type - select Personal
 - Full name
 - Company name
 - Phone number
@@ -614,7 +614,7 @@ Click on Create account and continue
 
 **Step 7. Authenticate Transaction with OTP**
 
-**Step 8. Confirm your identity with following-**
+**Step 8. Confirm your identity with the following-**
 - Text message/Voice call
 - Country/Region code
 - Cell Phone Number
@@ -636,9 +636,9 @@ Click on Continue
 - I am interested in:Devops
 
 Click on Submit
-See Thank You message.
-
+See Thank You message
 **Step 13. Click on Sign in to the Console**
+- Link - https://signin.aws.amazon.com
 
 **Step 14. Sign in page-**
 - Provide Root user email address.
@@ -646,7 +646,7 @@ See Thank You message.
 Click on Next
 
 **Step 15. Type the password**
-Click on Signin
+Click on Sign In
 
 Our Free Tier AWS Acoount is Ready.
 
