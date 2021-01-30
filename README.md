@@ -1384,11 +1384,10 @@ Click on create subscription
 
 **Step 4. Amazon SNS>Topics>MyFirstTopic>Subcriptions**
 - Pending confirmation
-- Check the Email given above
+- Check the Email given for subscription
 - See the Email from AWS Notification-Subcription Confirmation
   - Click on Confirm subscription
-  - See the confirmation 
-
+   
 **Step 5. Amazon SNS>Subcriptions**
 - See that status is Confirmed of Topic MyFirstTopic
 
@@ -1403,9 +1402,9 @@ In Event Source -
   - Specific Instance id(s) 
     - Copy Instance id from EC2Dashboard 
 
-Than Targets>Add Targets>SNS topic>MyFirstTopic
+In Targets>Add Targets>SNS topic>MyFirstTopic
 
-Click on Configure details.
+Click on Configure details
 
 **Step 7. Configure rule details**
 - Name - MyFirstEvent
