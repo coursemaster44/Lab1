@@ -1432,15 +1432,15 @@ Click on Create rule.
   - uncheck default settings 	
   - Read/Write capacity mode - Provisioned 
   - Provisioned capacity 
-    - Read capacity - 1
-	- Write capacity - 1
+    - Read capacity units - 1
+	- Write capacity units- 1
   - Auto Scaling
     - uncheck Read capacity and write capacity
 -Encyrption at Rest - default
 
 Click on Create 
 
-**Step 2. TABLE Created successfully**
+**Step 2. Movies TABLE Created successfully**
 - Goto Movies>Items>create item
 - Provide the following values:
   - Year - 1997
@@ -1481,6 +1481,8 @@ Click on Create
  - Provide the following values:
  - Partition key 1997
  - Sort key - As good as it gets
+ 
+ Click on Start search to get the result output
  
  **Step 8. Goto Movies>Delete Table>delete**
  - Table has been deleted
