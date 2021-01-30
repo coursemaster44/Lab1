@@ -303,9 +303,11 @@ zip -r dir.zip . -x "_MACOSX"
  
 # End of Lab
 
-# lab5#Git-Installation-lab
-----------------------------------------------------------------------------------------------------------------------------------------------
-### Open Terminal and Run the following commands to install Git.
+# lab5.1#Git-Installation-MACOS-lab
+------------------------------------------------------------
+
+**Open Terminal in MACOS**
+- Run the following commands to install Git
 
 ``` sh
 $ git --version
@@ -315,6 +317,55 @@ $ brew link --force git
 $ git --version
 ```
 # End of Lab
+
+# lab 5.2 Download & install Git on Windows
+---
+
+**Step 1. Open internet Browser and Search for Download git for windows. 
+Click on "Downloads git" link**
+
+**Step 2. Click on Download 2.28.0 for windows**
+
+**Step 3  Click on the downloaded file GIT-2.28.0-64-bit.exe**
+
+**Step 4. Click on Run**
+
+**Step 5. Click Next**
+
+**Step 6. Select Destination Location and Click on Next**
+
+**Step 7. Select Components and  Click on Next**
+
+**Step 8. To continue,click Next.If you would like to select a different folder,click Browse.**
+
+**Step 9. Select Use Git from the Windows Command Prompt**
+- Click on Next
+
+**Step 10. Select Use the OpenSSL library and Click on Next**
+
+**Step 11. Select Checkout Windows-style,commit unix style and Click on Next**
+
+**Step 12. Select Use MinTTY and Click Next**
+
+**Step 13. Select Enable file system caching and Enable Git credentials Manager and Click Next**
+
+**Step 14. Click Install**
+
+**Step 15. Installation has been started**
+
+**Step 16. Select Launch Git bash**
+- Click on Finish
+
+**Step 17. Open Local PC and Goto Start>Git Bash**
+
+```
+Type #“git init” to initialize the git
+Type  #“mkdir” to make a new directory(folder)
+Type # “cd test” to move into test directory
+
+```
+
+# End of lab
 
 
 
