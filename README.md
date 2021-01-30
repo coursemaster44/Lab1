@@ -464,15 +464,15 @@ Lab7# ASG-Lab
 
 - Instance type-t2.micro
 
-- key pair-select your key
+- key pair-select your key pair
 
 - Virtual Private Cloud
 
-- Security groups
+- Select the Security groups
 
 - Storage
 
-- Advanced details
+- Advanced details:-
  - User data
 ``` sh
 #!bin/bash
@@ -483,7 +483,7 @@ systemctl enable httpd.service
 echo "Hello World from $(hostname -f)" > /var/www/html/index.html
 ```
 
-Click on Create Lunch template>View Launch templates
+Click on Create Launch template>View Launch templates
 
 **Step 3. Select "MyFirstTemplate" Goto Actions>Create Auto Scaling group**
 
@@ -507,7 +507,7 @@ Click on Create Lunch template>View Launch templates
    - Minimum capacity-1
    - Maximum capacity-1
    
- - scaling policies-None
+ - Scaling policies-None
  
  Click on Next
  
@@ -520,10 +520,10 @@ Click on Create Lunch template>View Launch templates
 **Step 9. Review**
  Click on Create Auto Scaling group
  
-**Step 10. Select MyFirstASG>Instances>Lifecycle**
-- Status-InService
+**Step 10. Auto Scaling group has been created now goto MyFirstASG>Instances>Lifecycle**
+- Status - InService
  
-**Step 11. Copy the Instance Ip Address and paste in Internet browser**
+**Step 11. Copy the Instance Ip Address and paste it in Internet browser**
 
 **Step 12. EC2>Auto Scaling groups>MyFirstASG>Edit**
 
@@ -533,10 +533,11 @@ Click on Create Lunch template>View Launch templates
 - Maximum capacity-3
 
 **Step 14. EC2>Auto Scaling groups>MyFirstASG>Instances>Lifecycle**
+- See status Pending>InService
 
 **Step 15. Goto EC2 Dashboard>Instances**
 
-Copy the Ip address of all the three Instances and paste it in Internet Browser one by one.
+Copy the Ip address of all the three Instances one by one and paste it in Internet Browser to see all ec2 instances are running
  
  # End of Lab
  
