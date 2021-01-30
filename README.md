@@ -1164,7 +1164,7 @@ Click on Launch Instances
 
 **Step 12. EC2Dashboard>Public instance>Actions>Connect>connect**
 - We are into EC2 server
-  - Ping google.com and see the success.
+ - Ping google.com and see the success
   
 **Step 13. EC2Dashboard>Private instance** 
 - No Public Ipv4 address
