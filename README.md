@@ -543,10 +543,11 @@ Copy the Ip address of all the three Instances one by one and paste it in Intern
  
  
  # Lab8-ASG&ALB
--------------------------------------------------------------------
+------------------------------------------------------------
+
 **Step 1. Goto AWS Console>All Services>EC2>Load Balancing>Load Balancers>MyFirstALB>Listeners**
 
-**Step 2. EC2>Auto Scaling groups>MyFirstASG>Edit**
+**Step 2. Goto EC2>Auto Scaling groups>MyFirstASG>Edit**
 - Go to Load Balancers and select the Application or Network Load Balancer target groups
 - Select "MyFirstTargetgroup"
 - Health check type
@@ -561,20 +562,17 @@ Now Click on Update
 **Step 4. Select 1st Instance>Actions>Security>Change security groups**
 - Remove "launch-wizard-1" security group
 - Add "port80closed" security group
+- Click on Save
 
-**Step 5. EC2 Dashboard>Network & Security>Security Groups>port80closed>Inbound rules**
+**Step 5. EC2 Dashboard>Load Balancing>Target Groups>Targets**
+- Wait for the Instance to become unhealthy
 
-**Step 6. Select 1st Instance>Security>Inbound rules**
-
-**Step 7. EC2 Dashboard>Load Balancing>Target Groups>Targets**
-- Wait for Instance to become unhealthy
-
-**Step 8. EC2>Auto Scaling groups>MyFirstASG>Lifecycle**
+**Step 6. EC2>Auto Scaling groups>MyFirstASG>Lifecycle**
 - See that Instance is Terminating
-- Now see new Instance is launching.
+- Now see that new Instance is launching in place of unhealthy instance
 
-**Step 9. Copy the Newly launched Instance's IP address and paste in the internet browser**
-- See Hello World message.
+**Step 7. Copy the Newly launched Instance's IP address and paste it in the internet browser**
+- It is running 
 
 # End of Lab
 
