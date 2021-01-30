@@ -1178,6 +1178,8 @@ Click on Launch Instances
 # s3-lab
 
 **Step 1. AWS Management Console>All Services>S3>Create Bucket**
+
+Give the following details:
 - Provide globally unique Bucket name - "teacheramitk"
 - Region
 - Block all public access - leave as for now
@@ -1193,19 +1195,19 @@ Click on Create Bucket.
 
 Upload scucceeded
 
-**Step 4. Click on this Object**
+**Step 4. Click on this Object "testfile1.txt"**
 - In Details Click on Object URL
   - Access denied error (Because object is not public)
 
 **Step 5. Amazon S3>teacheramitk>Permissions>Edit Block public access**
 - Uncheck Block all public access
 - Click on Save changes
-- type confirm and click on confirm
+- Type confirm and click on Confirm
 
 **Step 6. Amazon S3>teacheramitk>object"testfile1.txt">Object actions>Make public>Click Make public**
 - successfully edited public access
 
-**Step 7. Now Click on Object URL**
+**Step 7. Goto S3>teacheramitk>object"testfile1.txt" and now Click on Object URL**
 - File is accessible now
 
 **Step 8. Amazon S3>teacheramitk>Permissions>Bucket policy>Edit**
@@ -1253,7 +1255,7 @@ Click on Save changes
 - Click on Object URL
 - File is accessible
 - Amazon S3>teacheramitk>"testfile3.txt">Versions
-- Note the upload timings of different versions
+  - Note the Last modified timings of different versions
 
 **Step 13. Open AWS CLI Terminal**
 ```sh
