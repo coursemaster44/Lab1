@@ -1253,7 +1253,7 @@ Click on Save changes
 - Click on Upload
 - Click on "testfile3.txt"
 - Click on Object URL
-- File is accessible
+- File is accessible with updates
 - Amazon S3>teacheramitk>"testfile3.txt">Versions
   - Note the Last modified timings of different versions
 
