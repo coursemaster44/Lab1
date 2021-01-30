@@ -36,8 +36,8 @@ Click on Next-Configure Instance details
   Click on Next:Configure Security Group
 
 **Step 7. Configure Security Group with following settings**
- -Type SSH is already with port 22 open from anywhere 0.0.0.0/0
- -Add rule for Type HTTP with port 80 open from anywhere 0.0.0.0/0
+ - Type SSH is already with port 22 open from anywhere 0.0.0.0/0
+ - Add rule for Type HTTP with port 80 open from anywhere 0.0.0.0/0
 
 Click Review and Launch 
 
