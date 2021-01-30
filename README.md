@@ -739,13 +739,13 @@ Click on Confirm password change
 **Step 3. Open Amazon Document with following link.**
 - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html
 
-**Step 4. Open your Terminal and type following command with help of above link.**
+**Step 4. Open your Terminal in MACOS and type the following commands with help of above link.**
 ```sh
 $ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 $ sudo installer -pkg AWSCLIV2.pkg -target /
 $ aws --version
 ```
-**Step 5. Follow the link and type command-**
+**Step 5. Follow the link and type the command**
 - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
 ```sh
 $ aws configure
@@ -755,11 +755,11 @@ $ aws configure
 - Default region name
 - Default output format
 
-Test the following command to list all the Buckets.
+**Step 6.Test the following command to list all the Buckets**
 ```
 $aws s3 ls
 ```
-Now type commands-
+**Step 7. Type the following commands to see secret access key id and access key**
 ```sh
 $ cd ~/.aws
 $ ls
