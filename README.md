@@ -953,6 +953,7 @@ Now able to see the s3 details
 **Step 1. AWS Management Console>All Services>VPC(Mumbai Region)**
 
 **Step 2. Following Amazon VPC resources are in Asia Pacific(Mumbai)**
+
 - VPCs - 1
 - Subnets - 3
 - Route Tables -1
@@ -978,7 +979,9 @@ Click on Region and change it to US East(N.Virginia) us-east-1
 - Select one subnet and click on Route Table Tab
    - It has Two Entries
       - First entry allows access within the VPC
+        - Destination 172.31.0.0/16,Target local
       - Second entry allows outside the VPC
+        - Destination 0.0.0.0/0,Target igw-xxx
 
 **Step 6. Goto AWS Console>Services>VPC>Route Tables>Routes**
 - It has Two Entries
