@@ -1454,7 +1454,8 @@ Click on Create
  - title - test1
  - Click on +
     - Append>string
-      - genre String:romcom
+      - genre 
+      - String:romcom
  
  Click on save
  
